@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.6.0"  method="upgrade">
+	<name>DJClassifieds Menu</name>
+	<author>DJ-Extensions.com</author>
+	<creationDate>September 2011</creationDate>
+	<copyright>Copyright (C) 2010 DJ-Extensions.com LTD, All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>contact@design-jooma.eu</authorEmail>
+	<authorUrl>http://design-joomla.eu</authorUrl>
+	<version>2.0.2</version>
+	<description>DJ Classifieds Menu module</description>
+	<files>
+		<filename module="mod_djclassifieds_menu">mod_djclassifieds_menu.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>language</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text" default="_menu" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+				<field name="max_level" type="list" default="0" label="MOD_DJCLASSIFIEDS_MENU_MAX_LEVEL">
+					<option value="0">MOD_DJCLASSIFIEDS_MENU_ALL</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</field>
+				<field name="new_ad_link" type="list" default="2" label="MOD_DJCLASSIFIEDS_MENU_LINK_NEW_AD">
+					<option value="0">JNO</option>
+					<option value="1">MOD_DJCLASSIFIEDS_MENU_TOP</option>
+					<option value="2">MOD_DJCLASSIFIEDS_MENU_BOTTOM</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</install>

@@ -1,0 +1,373 @@
+/*--------------------------------------------------------------
+# Copyright (C) joomla-monster.com
+# License: http://www.joomla-monster.com/license.html Joomla-Monster Proprietary Use License
+# Website: http://www.joomla-monster.com
+# Support: info@joomla-monster.com
+---------------------------------------------------------------*/
+
+/*********************** ADMINISTRATOR BACKEND STYLES ***********************/
+
+.pane-sliders {
+    margin: 18px 10px 0 !important;
+	*border-bottom: 1px solid #cccccc;
+}
+
+.pane-sliders label a:link,
+.pane-sliders label a:visited {
+	color: #137BAF;
+	font-weight: normal;
+}
+
+.pane-sliders label a.jm-anchor:link,
+.pane-sliders label a.jm-anchor:visited {
+	background: url(../images/panel_normal.png) no-repeat left center;
+	padding: 0 0 0 15px;	
+}
+
+.pane-sliders .panel {
+	margin: 0 !important;
+	border-bottom: none !important;
+}
+
+.pane-sliders .panel:last-child {
+	border-bottom: 1px solid #cccccc !important;
+}
+
+.pane-sliders .panel h3 {
+	background: #f1f1f1 !important;
+	background: -moz-linear-gradient(top,  #f1f1f1 0%, #e8e8e8 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(100%,#e8e8e8)) !important;
+	background: -webkit-linear-gradient(top,  #f1f1f1 0%,#e8e8e8 100%) !important;
+	background: -o-linear-gradient(top,  #f1f1f1 0%,#e8e8e8 100%) !important;
+	background: -ms-linear-gradient(top,  #f1f1f1 0%,#e8e8e8 100%) !important;
+	background: linear-gradient(top,  #f1f1f1 0%,#e8e8e8 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#e8e8e8',GradientType=0 ) !important;
+	font-size: 14px;
+	line-height: 50px;
+	padding: 0 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+	box-shadow: inset 0px 1px 0px 0px #ffffff; 
+}
+
+.pane-sliders .panel h3.pane-toggler-down,
+.pane-sliders .panel h3.pane-toggler-down:hover {
+	background: #4991c1;
+	background: -moz-linear-gradient(top,  #4991c1 0%, #5ca0cd 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4991c1), color-stop(100%,#5ca0cd)) !important;
+	background: -webkit-linear-gradient(top,  #4991c1 0%,#5ca0cd 100%) !important;
+	background: -o-linear-gradient(top,  #4991c1 0%,#5ca0cd 100%) !important;
+	background: -ms-linear-gradient(top,  #4991c1 0%,#5ca0cd 100%) !important;
+	background: linear-gradient(to bottom,  #4991c1 0%,#5ca0cd 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4991c1', endColorstr='#5ca0cd',GradientType=0 ) !important;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.pane-sliders .panel h3.pane-toggler-down {
+	border: none;
+}
+
+.pane-sliders .panel h3:hover {
+	background: #e5e5e5 !important;
+	background: -moz-linear-gradient(top,  #e5e5e5 0%, #dcdcdc 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e5e5), color-stop(100%,#dcdcdc)) !important;
+	background: -webkit-linear-gradient(top,  #e5e5e5 0%,#dcdcdc 100%) !important;
+	background: -o-linear-gradient(top,  #e5e5e5 0%,#dcdcdc 100%) !important;
+	background: -ms-linear-gradient(top,  #e5e5e5 0%,#dcdcdc 100%) !important;
+	background: linear-gradient(top,  #e5e5e5 0%,#dcdcdc 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#dcdcdc',GradientType=0 ) !important;
+}
+
+.pane-sliders .panel h3 a:link,
+.pane-sliders .panel h3 a:visited {
+	color: #303030 !important;
+	font-weight: normal !important;
+	text-transform: uppercase;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+.pane-sliders .panel h3.pane-toggler-down a:link,
+.pane-sliders .panel h3.pane-toggler-down a:visited {
+	color: #ffffff !important;
+	text-shadow: none;	
+}
+
+.pane-sliders .pane-toggler span {
+    background: url(../images/panel_normal.png) no-repeat left center !important;
+}
+
+.pane-sliders .pane-toggler-down span {
+    background: url(../images/panel_active.png) no-repeat left center !important;
+}
+
+.pane-sliders .panel fieldset.panelform {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.pane-sliders .panel fieldset.panelform label {
+	max-width: 30% !important;
+	min-width: 30% !important;
+	line-height: 16px;
+	text-align: right;
+	color: #444444;
+	font-size: 12px;
+	padding: 15px 20px 15px 10px;
+	margin: 0 !important;
+}
+
+.pane-sliders .panel fieldset.panelform span label {
+	line-height: 30px;	
+	height: 30px;
+}
+
+.pane-sliders .panel fieldset.panelform label#jform_params___field1-lbl {
+	display: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	border: none !important;
+}
+
+.pane-sliders fieldset input, 
+.pane-sliders fieldset button, 
+.pane-sliders fieldset select {
+	height: 20px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 4px;
+	margin: 10px 10px 10px 0 !important;
+	color: #999999;
+	font-size: 12px;
+	max-width: 50%;
+}
+
+.pane-sliders fieldset textarea {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;	
+	margin: 10px 10px 10px 0 !important;
+	color: #999999;
+	padding: 4px;
+	font-size: 12px;
+	max-width: 50%;
+}
+
+.pane-sliders fieldset .fltlft input {
+	max-width: 100%;
+}
+
+.pane-sliders fieldset .fltlft {
+	max-width: 50%;
+}
+
+.pane-sliders fieldset select {
+	height: 30px;
+}
+
+.pane-sliders fieldset select option {
+	padding: 4px;
+}
+
+.pane-sliders fieldset input, 
+.pane-sliders fieldset select,
+.pane-sliders fieldset textarea {
+	border: 1px solid #cccccc !important;
+}
+
+.pane-sliders input:hover, 
+.pane-sliders select:hover, 
+.pane-sliders textarea:hover {
+	border: 1px solid #aeaeae !important;
+}
+
+.pane-sliders input:focus, 
+.pane-sliders select:focus, 
+.pane-sliders textarea:focus {
+    background-color: #fff9f4;
+}
+
+.pane-sliders .button2-left {
+	background: none !important;
+}
+
+.pane-sliders .button2-left .blank {
+	background: none !important;
+}
+
+.pane-sliders .button2-left .page, .button2-left .blank {
+ 	background: none !important;
+}
+
+.pane-sliders .button2-left a {
+	background: #4991c1;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border: 1px solid #4991c1;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #76b2da;
+	box-shadow: inset 0px 1px 0px 0px #76b2da; 
+	text-shadow: 0px 1px 0px #286791;
+	color: #ffffff !important;
+	height: 22px !important;
+	line-height: 22px !important;
+	margin: 13px 0;
+	padding: 0 10px !important;
+}
+
+.pane-sliders .button2-left a:hover {
+	background: #569ece;
+	border: 1px solid #569ece;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+.pane-sliders .button2-left a:active {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	position: relative;
+	top: 1px; 
+}
+
+.pane-sliders ul.adminformlist li {
+	border-top: 1px solid #e8e8e8;
+	overflow: hidden;
+	*zoom:1;
+}
+
+.pane-sliders ul.adminformlist li span {
+	*zoom:1;
+}
+
+.pane-sliders ul.adminformlist li.jmspacer-wrapper ul li {
+	*padding-bottom: 5px;
+}
+
+.pane-sliders ul.adminformlist li:hover,
+.pane-sliders ul.adminformlist li.jmspacer-wrapper ul li:hover  {
+	background: #f9f9f9;	
+}
+
+.pane-sliders ul.adminformlist li.jmspacer-wrapper:hover {
+	background: none;
+}
+
+.pane-sliders ul.adminformlist li.jmspacer-wrapper ul li:first-child {
+	border-top: 1px solid #e8e8e8;
+}
+
+.pane-sliders ul.adminformlist li.jmspacer-wrapper div {
+	*position: relative !important;
+    *z-index: 999 !important;	
+}
+
+.pane-sliders ul.adminformlist li:first-child {
+	border: none;
+}
+
+.pane-sliders ul.adminformlist li span.before,
+.pane-sliders ul.adminformlist li span.after {
+	display: none;
+}
+
+.pane-sliders ul.adminformlist li span {
+	vertical-align: bottom;
+}
+
+.pane-sliders ul.adminformlist li.jmspacer-wrapper ul li span.spacer {
+	background: none;
+}
+
+.pane-sliders ul.adminformlist li span.jmdesc {
+	padding-bottom: 10px;
+}
+
+.pane-sliders ul.adminformlist li span.jmtext {
+	display: inline-block;
+	width: 100%;
+	background: #f7f7f7;
+}
+
+.pane-sliders ul.adminformlist li span.jmtext label {
+	color: #2678cd;
+	text-transform: uppercase;
+	padding: 0 20px 0 40px;
+	text-align: left;
+	font-size: 11px;
+	max-width: none !important;
+    min-width: 0 !important;
+} 
+
+.pane-sliders span.unit {
+	float: left;
+	line-height: 30px;
+	height: 30px;
+	color: #444444;
+	font-size: 12px;
+	padding: 10px 10px 10px 0;
+}
+
+div.panel fieldset {
+	background: none !important;
+}
+
+.pane-sliders fieldset#jform_params_SchemeOption {
+	width: 50%;
+}
+
+.pane-sliders fieldset#jform_params_SchemeOption input[type="radio"] {
+	clear: both;
+	margin: 15px 15px 10px 0 !important;
+	border: none !important;
+}
+
+.pane-sliders fieldset#jform_params_SchemeOption label {
+	text-align: left;
+	padding: 10px 0;
+	max-width: 100% !important;
+	min-width: 50% !important;
+	line-height: 30px;
+}
+
+.pane-sliders fieldset#jform_params_SchemeOption label[for="jform_params_SchemeOption0"],
+.pane-sliders fieldset#jform_params_SchemeOption label[for="jform_params_SchemeOption1"] {
+	padding: 10px 0 0;
+}
+
+.pane-sliders fieldset#jform_params_SchemeOption input#jform_params_SchemeOption0,
+.pane-sliders fieldset#jform_params_SchemeOption input#jform_params_SchemeOption1 {
+	margin: 15px 15px 0 0 !important;	
+}
+
+.pane-sliders fieldset#jform_params_SchemeOption input {
+	float: left;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.pane-sliders fieldset#jform_params_SchemeOption:not(.elo) label {
+	background: url(../images/radio.png) no-repeat 0 16px;
+	float: none !important;
+	display: block !important;
+}
+
+.pane-sliders fieldset#jform_params_SchemeOption:not(.elo) input[type="radio"]:hover + label {
+	background: url(../images/radio-hover.png) no-repeat 0 16px;
+}
+
+.pane-sliders fieldset#jform_params_SchemeOption:not(.elo) input[type="radio"]:checked + label {
+	background: url(../images/radio-checked.png) no-repeat 0 16px;
+}
+
+.pane-sliders ul.adminformlist li span.jmlink label {
+	width: auto !important;
+	max-width: none !important;
+	min-width: 0 !important;
+	text-align: left;
+	padding: 10px 10px 10px 30px;
+	margin: 10px 13px !important;
+	height: auto !important;
+	line-height: 18px !important;
+}

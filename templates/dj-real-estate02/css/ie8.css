@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+# Copyright (C) joomla-monster.com
+# License: http://www.joomla-monster.com/license.html Joomla-Monster Proprietary Use License
+# Website: http://www.joomla-monster.com
+# Support: info@joomla-monster.com
+---------------------------------------------------------------*/
+
+/*********************** IE8 ************************/
+
+/** details **/
+	
+#jm-back-top span {
+    background-color: #aaaaaa;
+}
+
+#jm-back-top a:hover span {
+    background-color: #cccccc;
+}
+
+.view-first .mask,
+.view-second .mask {
+    display: none;
+}
+
+#dj-classifieds .dj-item .djc_mainimage img {
+    max-width: none;
+}
+
+.jm-module img {
+    width: auto;
+}
+
+.mod_djclassifieds_items {
+    width: 100%;
+}
+
+.mod_djclassifieds_items .items {
+    display: block; 
+}

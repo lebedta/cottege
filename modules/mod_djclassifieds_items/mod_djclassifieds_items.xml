@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.6.0"  method="upgrade">
+	<name>DJClassifieds Items</name>
+	<author>DJ-Extensions.com</author>
+	<creationDate>September 2011</creationDate>
+	<copyright>Copyright (C) 2010 DJ-Extensions.com LTD, All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>contact@design-jooma.eu</authorEmail>
+	<authorUrl>http://design-joomla.eu</authorUrl>
+	<version>2.1</version>
+	<description>DJ Classifieds Items module</description>
+	<files>
+		<filename module="mod_djclassifieds_items">mod_djclassifieds_items.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>language</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="fieldMODULECLASSSUFFIX" />
+				<field name="items_nr" type="text" default="7" label="MOD_DJCLASSIFIEDS_ITEMS_NUMBER_OF_ITEMS" />
+				<field name="columns_nr" type="list" default="1" label="MOD_DJCLASSIFIEDS_ITEMS_NUMBER_OF_COLUMNS">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</field>
+				<field name="items_ord" type="list" default="0" label="MOD_DJCLASSIFIEDS_ITEMS_ORDERING">
+					<option value="0">MOD_DJCLASSIFIEDS_ITEMS_MOST_RECENT</option>
+					<option value="1">MOD_DJCLASSIFIEDS_ITEMS_POPULAR</option>
+					<option value="2">MOD_DJCLASSIFIEDS_ITEMS_RANDOM</option>
+				</field>
+				<field name="only_promoted" type="list" default="0" label="MOD_DJCLASSIFIEDS_ITEMS_ONLY_PROMOTED">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="fallow_category" type="list" default="0" label="MOD_DJCLASSIFIEDS_ITEMS_FALLOW_CATEGORY">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="items_ids" type="text" default="" label="MOD_DJCLASSIFIEDS_ITEMS_IDS" description="MOD_DJCLASSIFIEDS_ITEMS_IDS_DESC"  size="50" />
+				<field name="show_img" type="list" default="1" label="MOD_DJCLASSIFIEDS_ITEMS_SHOW_ICON">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="show_title" type="list" default="1" label="MOD_DJCLASSIFIEDS_ITEMS_SHOW_TITLE">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>	
+				<field name="show_date" type="list" default="1" label="MOD_DJCLASSIFIEDS_ITEMS_SHOW_DATE">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>		
+				<field name="show_cat" type="list" default="1" label="MOD_DJCLASSIFIEDS_ITEMS_SHOW_CATEGORY">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>		
+				<field name="cat_link" type="list" default="1" label="MOD_DJCLASSIFIEDS_ITEMS_CATEGORY_LINKED">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>	
+				<field name="show_price" type="list" default="1" label="MOD_DJCLASSIFIEDS_ITEMS_SHOW_PRICE">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="show_description" type="list" default="1" label="MOD_DJCLASSIFIEDS_ITEMS_SHOW_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>	
+				<field name="desc_source" type="list" default="0" label="MOD_DJCLASSIFIEDS_ITEMS_DESC_SOURCE_DESC">
+					<option value="0">MOD_DJCLASSIFIEDS_ITEMS_INTRO_DESC</option>
+					<option value="1">MOD_DJCLASSIFIEDS_ITEMS_FULL_DESC</option>
+				</field>
+				<field name="desc_link" type="list" default="0" label="MOD_DJCLASSIFIEDS_ITEMS_DESC_LINKED">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>	
+				<field name="char_desc_nr" type="text" default="50" label="MOD_DJCLASSIFIEDS_ITEMS_CHARS_IN_DESC" description="MOD_DJCLASSIFIEDS_ITEMS_CHARS_IN_DESC_DESC" />		
+				<field name="cache" type="radio" default="0" label="Enable Cache" description="Select whether to cache the content of this module">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</install>

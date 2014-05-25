@@ -1,0 +1,218 @@
+/*--------------------------------------------------------------
+# Copyright (C) joomla-monster.com
+# License: http://www.joomla-monster.com/license.html Joomla-Monster Proprietary Use License
+# Website: http://www.joomla-monster.com
+# Support: info@joomla-monster.com
+---------------------------------------------------------------*/
+
+/*********************** IE7 ************************/
+
+/** details **/
+
+#jm-back-top span {
+    background-color: #aaaaaa;
+}
+
+#jm-back-top a:hover span {
+    background-color: #cccccc;
+}
+
+#jm-top-bar div.logout-button input.button {
+    padding: 0 2px;
+}
+
+#jm-top-bar div.login-greeting {
+	display: inline;
+}
+
+#jm-top-bar div.logout-button {
+	display: inline;
+}
+
+/** djmenu **/
+
+.dj-main li.dj-up {
+    display: inline;
+}
+
+.dj-main li a.dj-up_a {
+    display: inline;
+}
+
+.dj-main li a.dj-up_a span
+.dj-main li.active a.dj-up_a span{
+    background: none;
+}
+
+/** menu **/
+
+#jm-top-bar ul.menu li,
+#jm-bottom-menu ul.menu li {
+    display: inline;
+}
+
+#jm-top-bar ul.menu li a:link,
+#jm-top-bar ul.menu li a:visited,
+#jm-bottom-menu ul.menu li a:link,
+#jm-bottom-menu ul.menu li a:visited {
+    display: inline;
+}
+
+/** modules **/
+
+.jm-module {
+    zoom: 1;
+}
+
+#jm-content-top1 .rowcount_2 .content-top1-in,
+#jm-content-bottom2 .rowcount_2 .content-bottom2-in,
+#jm-top .rowcount_2 .top-in,
+#jm-bottom1 .rowcount_2 .bottom1-in {
+    width: 49.9%;
+}
+
+#jm-top .rowcount_3 .top-in,
+#jm-bottom1 .rowcount_3 .bottom1-in {
+    width: 33.3%
+}
+
+#jm-top .rowcount_4 .top-in,
+#jm-bottom1 .rowcount_4 .bottom1-in {
+    width: 24.9%;
+}
+
+/** template **/
+
+div.pagination ul li {
+    display: inline;
+}
+
+input, select {
+    height: 31px;
+    line-height: 31px;
+}
+
+input.button, button.validate, button {
+    padding: 0 5px;
+}
+
+/** dj-classifieds **/
+
+.dj_cf_search input[type="text"],
+.dj_cf_search select,
+.dj_cf_search #search_ex_fields select,
+#dj-classifieds #ask_form input,
+#dj-classifieds textarea {
+    max-width: 90% !important;
+}
+
+.dj_cf_search select,
+.dj_cf_search #search_ex_fields select {
+    width: auto !important;
+}
+
+.dj-category .cat_row{
+    zoom: 1;
+}
+
+#dj-classifieds .dj-item .title_top {
+    zoom: 1;
+}
+
+.jm-module.horizontal_search .dj_cf_search #search_ex_fields div.djseform_field:first-child + div + div + div {
+    clear: both;
+    margin: 0;
+}
+
+#dj-classifieds .djcf_items_blog span.new_icon {
+    margin-top: 3px;
+}
+
+#dj-classifieds .dj-item .djc_mainimage img {
+    max-width: none;
+}
+
+.jm-module img {
+    width: auto;
+}
+
+#dj-classifieds .dj-additem .prom_rows .djform_row .label {
+    width: 24.9%;
+}
+
+#dj-classifieds .dj-additem .prom_rows .djform_row .djform_field {
+    width: 69.9%;
+}
+
+#dj-classifieds .dj-additem .prom_rows .djform_prom_v {
+    width: 24.9%
+}
+
+#dj-classifieds .dj-additem .prom_rows .djform_prom_img {
+    width: 24.9%
+}
+
+#dj-classifieds .dj-additem .prom_rows .djform_prom_desc {
+    width: 49.9%
+}
+
+.dj_cf_search .search_price input.inputbox {
+    width: 33px !important;
+}
+
+#dj-classifieds table.dj-items tr td {
+    border-left: 1px solid ;
+}
+
+#dj-classifieds table.dj-items td,
+#dj-classifieds table.dj-items tr.promotion.p_bg td {
+    border-right: 1px solid;
+}
+
+#dj-classifieds table.dj-items tr td.first,
+#dj-classifieds table.dj-items tr.promotion.p_bg td.first {
+    border-right: 1px solid;
+}
+
+#dj-classifieds table.dj-items tr.promotion.p_bg td {
+    border-right: 1px solid;
+}
+
+#dj-classifieds table.dj-items tr.promotion.p_border td,
+#dj-classifieds table.dj-items tr.promotion.p_border td.first {
+    border: 3px solid;
+}
+.jm-module.horizontal_search .dj_cf_search .search_price input.inputbox {
+    width: 30% !important;
+}
+
+/** dj-catalog2 **/
+
+#djcatalog {
+    zoom: 1;
+    width: 99.9%
+}
+
+#djcatalog,
+#djcatalog .djc_items .djc_item_bg,
+#djcatalog .djc_related_items .djc_item_bg {
+    position: static;
+}
+
+#djcatalog .djc_items .djc_item .djc_featured_image,
+#djcatalog .featured_item .djc_featured_image {
+    display: none;
+}
+
+#djcatalog .djc_filters .djc_filters_in,
+#djcatalog .djc_order .djc_order_in {
+    zoom: 1;
+}
+
+#djcatalog h3.djc_h3acc{
+    padding-top: 4px;
+}
+
+#djcatalog .djc_filter_search input.button{
+    margin-top: 1px;
+}

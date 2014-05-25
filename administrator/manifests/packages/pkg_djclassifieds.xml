@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="1.7">
+<name>DJ-Classifieds Package</name>
+<packagename>dj-classifieds</packagename>
+<creationDate>November 2011</creationDate>
+<author>DJ-Extensions.com</author>
+<copyright>Copyright (C) 2010 DJ-Extensions.com LTD, All rights reserved.</copyright>
+<license> http://www.gnu.org/licenses GNU/GPL</license>
+<authorEmail>contact@design-joomla.eu</authorEmail>
+<authorUrl>http://dj-extensions.com</authorUrl>
+<version>2.1.2</version>
+<url>http://dj-extensions.com</url>
+<packager></packager>
+<packagerurl></packagerurl>
+<description>DJ-Classifieds All-in-one Package</description>
+<files>
+        <file type="component" client="admin" id="com_djclassifieds">com_djclassifieds.zip</file>
+        <file type="module" client="site" id="mod_djclassifieds_items">mod_djclassifieds_items.zip</file>
+        <file type="module" client="site" id="mod_djclassifieds_maps">mod_djclassifieds_maps.zip</file>
+        <file type="module" client="site" id="mod_djclassifieds_menu">mod_djclassifieds_menu.zip</file>
+        <file type="module" client="site" id="mod_djclassifieds_search">mod_djclassifieds_search.zip</file>
+        <file type="module" client="site" id="mod_djclassifieds_user_menu">mod_djclassifieds_user_menu.zip</file>          
+        <file type="plugin" client="site" id="djcfAuthorizeNET" group="djclassifiedspayment">djcfAuthorizeNET.zip</file>
+        <file type="plugin" client="site" id="djcfPaypal" group="djclassifiedspayment">djcfPaypal.zip</file>
+        <file type="plugin" client="site" id="djcfPayU" group="djclassifiedspayment">djcfPayU.zip</file>
+        <file type="plugin" client="site" id="djcfPrzelewy24" group="djclassifiedspayment">djcfPrzelewy24.zip</file>
+</files>
+</extension>

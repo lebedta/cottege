@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="plugin"
+	version="1.6.0"
+	client="site"
+	method="upgrade"
+	group="djcatalog2">
+    <name>plg_djcatalog2_addthis</name>
+	<creationDate>January 2011</creationDate>
+    <author>AddThis, LLC; Blue Constant Media LTD</author>
+    <copyright>Copyright (C) 2009 AddThis, LLC; 2010 Blue Constant Media LTD</copyright>
+    <license>http://www.gnu.org/licenses GNU/GPL</license>
+    <authorUrl>www.addthis.com</authorUrl>
+    <version>2.3</version>
+    <description>PLG_DJCATALOG2_ADDTHIS_ADDTHISDESC</description>
+    <files>
+        <filename plugin="addthis">addthis.php</filename>
+        <filename>index.html</filename>
+        <folder>language</folder>
+    </files>
+    <config>
+    	<fields name="params">
+		    <fieldset name="basic">
+		        <field name="pub_id" type="text" default="" label="PLG_DJCATALOG2_ADDTHIS_USERNAME" description="PLG_DJCATALOG2_ADDTHIS_USERNAME_DESC"/>
+		        <field name="button_style" type="list" default="sm-plus" label="PLG_DJCATALOG2_ADDTHIS_BUTTON_STYLE" description="">
+		            <option value="lg-share">lg-share</option>
+		            <option value="lg-bookmark">lg-bookmark</option>
+		            <option value="lg-addthis">lg-addthis</option>
+		            <option value="sm-share">sm-share</option>
+		            <option value="sm-bookmark">sm-bookmark</option>
+		            <option value="sm-plus">sm-plus</option>
+		            <option value="custom">PLG_DJCATALOG2_ADDTHIS_CUSTOM_BUTTON</option>
+		        </field>
+		        <field name="custom_url" label="PLG_DJCATALOG2_ADDTHIS_CUSTOM_BUTTON_URL" type="text" default="" description="PLG_DJCATALOG2_ADDTHIS_CUSTOM_BUTTON_URL_DESC"/>
+		        <field name="addthis_button_language" size="3" type="list" default="en" label="PLG_DJCATALOG2_ADDTHIS_BUTTON_LANG"  description="">
+		            <option value="zh">Chinese</option>
+		            <option value="da">Danish</option>
+		            <option value="nl">Dutch</option>
+		            <option value="en">English</option>
+		            <option value="fi">Finnish</option>
+		            <option value="fr">French</option>
+		            <option value="de">German</option>
+		            <option value="he">Hebrew</option>
+		            <option value="is">Icelandic</option>
+		            <option value="it">Italian</option>
+		            <option value="ja">Japanese</option>
+		            <option value="no">Norwegian</option>
+		            <option value="pl">Polish</option>
+		            <option value="pt">Portuguese</option>
+		            <option value="ru">Russian</option>
+		            <option value="sl">Slovenian</option>
+		            <option value="es">Spanish</option>
+		            <option value="sv">Swedish</option>
+		            <option value="tr">Turkish</option>
+		            <option value="cy">Welsh</option>
+		        </field> 
+		        <field name="addthis_brand" type="text" default="" label="PLG_DJCATALOG2_ADDTHIS_BRAND" description="PLG_DJCATALOG2_ADDTHIS_BRAND_DESC"/>
+		        <field name="addthis_header_color" type="text" default="" label="PLG_DJCATALOG2_ADDTHIS_HEADER_COLOR" description="PLG_DJCATALOG2_ADDTHIS_HEADER_COLOR_DESC"/>
+		        <field name="addthis_header_background" type="text" default="" label="PLG_DJCATALOG2_ADDTHIS_HEADER_BG" description="PLG_DJCATALOG2_ADDTHIS_HEADER_BG_DESC"/>
+		        <field name="addthis_options" type="text" default="" label="PLG_DJCATALOG2_ADDTHIS_CUSTOM_SVC_LIST" description="PLG_DJCATALOG2_ADDTHIS_CUSTOM_SVC_LIST_DESC"/>
+		        <field name="alignment" type="radio" default="right" label="PLG_DJCATALOG2_ADDTHIS_ALIGNMENT" description="">
+		            <option value="right">PLG_DJCATALOG2_ADDTHIS_RIGHT</option>
+		            <option value="center">PLG_DJCATALOG2_ADDTHIS_CENTER</option>
+		            <option value="left">PLG_DJCATALOG2_ADDTHIS_LEFT</option>
+		        </field>
+		    </fieldset>
+		    <fieldset name="advanced" >
+		        <field name="addthis_offset_top" type="text" default="" label="PLG_DJCATALOG2_ADDTHIS_MT_OFFSET" description="PLG_DJCATALOG2_ADDTHIS_MT_OFFSET_DESC"/>
+		        <field name="addthis_offset_left" type="text" default="" label="PLG_DJCATALOG2_ADDTHIS_ML_OFFSET" description="PLG_DJCATALOG2_ADDTHIS_ML_OFFSET_DESC"/>
+		        <field name="addthis_hover_delay" type="text" default="" label="PLG_DJCATALOG2_ADDTHIS_HOVER_DELAY" description="PLG_DJCATALOG2_ADDTHIS_HOVER_DELAY_DESC"/>
+		        <field name="addthis_hide_embed" type="list" default="1" label="PLG_DJCATALOG2_ADDTHIS_HIDE_FLASH_CONTENT" description="PLG_DJCATALOG2_ADDTHIS_HIDE_FLASH_CONTENT_DESC">
+		            <option value="1">PLG_DJCATALOG2_ADDTHIS_TRUE</option>
+		            <option value="0">PLG_DJCATALOG2_ADDTHIS_FALSE</option>
+		        </field>
+		        <field name="addthis_language" size="3" type="list" default="" label="PLG_DJCATALOG2_ADDTHIS_MENU_LANGUAGE" description="">
+		            <option value="">PLG_DJCATALOG2_ADDTHIS_MENU_LANGUAGE_AUTO</option>
+		            <option value="zh">Chinese</option>
+		            <option value="da">Danish</option>
+		            <option value="nl">Dutch</option>
+		            <option value="en">English</option>
+		            <option value="fi">Finnish</option>
+		            <option value="fr">French</option>
+		            <option value="de">German</option>
+		            <option value="he">Hebrew</option>
+		            <option value="is">Icelandic</option>
+		            <option value="it">Italian</option>
+		            <option value="ja">Japanese</option>
+		            <option value="no">Norwegian</option>
+		            <option value="pl">Polish</option>
+		            <option value="pt">Portuguese</option>
+		            <option value="ru">Russian</option>
+		            <option value="sl">Slovenian</option>
+		            <option value="es">Spanish</option>
+		            <option value="sv">Swedish</option>
+		            <option value="tr">Turkish</option>
+		            <option value="cy">Welsh</option>
+		        </field>                
+		    </fieldset>
+    	</fields>
+    </config>
+</extension>

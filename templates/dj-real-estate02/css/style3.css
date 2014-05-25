@@ -1,0 +1,852 @@
+/*--------------------------------------------------------------
+# Copyright (C) joomla-monster.com
+# License: http://www.joomla-monster.com/license.html Joomla-Monster Proprietary Use License
+# Website: http://www.joomla-monster.com
+# Support: info@joomla-monster.com
+---------------------------------------------------------------*/
+
+/*********************** #566b70 ***********************/
+
+body {
+    color: #fff;
+}
+
+/** djmenu **/
+
+.dj-main li a {
+    color: #fff;
+}
+
+.dj-main li:hover ul.dj-submenu, .dj-main li.hover ul.dj-submenu, .dj-main li ul.dj-submenu, .dj-main li ul {
+    background: url('../images/style3/bg-djmenu.png');
+    background: #F59D2F;
+    background: rgba(245, 157, 47, 0.9);
+    border-color: #f59d2f;
+}
+
+.dj-main li:hover ul.dj-submenu:after,
+.dj-main li.hover ul.dj-submenu:after {
+    background-image: url(../images/style3/dj-main-li-active.png);
+}
+
+.dj-main li.active a.dj-up_a span {
+    border-color: #f59d2f
+}
+
+.dj-main li a.dj-up_a {
+    color: #ffffff;
+    background-image: url('../images/style3/br-djmenu.png');
+}
+
+.dj-main li.active a.dj-up_a span {
+    background-image: url(../images/style3/dj-main-li-active.png);
+}
+
+.dj-main li ul.dj-submenu li a {
+    border-color: #ffb861 !important;
+}
+
+.dj-main li.hover a.dj-up_a,
+.dj-main li:hover a.dj-up_a {
+    color: #f59d2f;
+}
+
+.dj-main li.hover ul.dj-submenu li a:hover,
+.dj-main li:hover ul.dj-submenu li a:hover,
+.dj-main li ul.dj-submenu li a.active,
+.dj-main li ul.dj-submenu li li a.active,
+.dj-main li ul.dj-submenu li li li a.active {
+    color: #ffd199;
+}
+
+.dj-main li.hover ul.dj-submenu li a.dj-more-active,
+.dj-main li:hover ul.dj-submenu li a.dj-more-active {
+    color: #ffd199;
+}
+
+.dj-main li.hover li.hover a.dj-more,
+.dj-main li.hover li.hover li.hover a.dj-more,
+.dj-main li.hover li.hover li.hover li.hover a.dj-more,
+.dj-main li.hover li.hover li.hover li.hover li.hover a.dj-more,
+.dj-main li:hover li:hover a.dj-more,
+.dj-main li:hover li:hover li:hover a.dj-more,
+.dj-main li:hover li:hover li:hover li:hover a.dj-more,
+.dj-main li:hover li:hover li:hover li:hover li:hover a.dj-more {
+    color: #ffd199;
+}
+
+.dj-main li.hover li.hover ul,
+.dj-main li.hover li.hover li.hover ul,
+.dj-main li.hover li.hover li.hover li.hover ul,
+.dj-main li.hover li.hover li.hover li.hover li.hover ul,
+.dj-main li.hover li.hover li.hover li.hover li.hover li.hover ul,
+.dj-main li:hover li:hover ul,
+.dj-main li:hover li:hover li:hover ul,
+.dj-main li:hover li:hover li:hover li:hover ul,
+.dj-main li:hover li:hover li:hover li:hover li:hover ul,
+.dj-main li:hover li:hover li:hover li:hover li:hover li:hover ul {
+    border-top-color: #ffb861;
+}
+
+/** layout **/
+#jm-midpage-space {
+    background: #566b70;
+}
+
+#jm-main {
+    background: url('../images/style3/bg-main.png') repeat-x;
+}
+
+/** menus **/
+
+.jm-module ul.menu li a:link, 
+.jm-module ul.menu li a:visited {
+	color: #ffffff;
+}
+
+.jm-module ul.menu li.active > a:link,
+.jm-module ul.menu li.active > a:visited,
+.jm-module ul.menu li a:hover {
+    color: #F59D2F;
+}
+
+.jm-module.border-ms ul.menu > li.active > a:link,
+.jm-module.border-ms ul.menu > li.active > a:visited,
+.jm-module.border-ms ul.menu > li > a:hover {
+    background: #b6c2c5;
+    color: #fff;
+}
+
+.jm-module.white-ms,
+.jm-module.white-ms ul.menu li a:link, 
+.jm-module.white-ms ul.menu li a:visited {
+    color: #566B70;
+}
+
+.jm-module.white-ms ul.menu li.active > a:link,
+.jm-module.white-ms ul.menu li.active > a:visited,
+.jm-module.white-ms ul.menu li a:hover {
+    color: #F59D2F;
+}
+
+.jm-module.white-ms ul.menu > li.active > a:link,
+.jm-module.white-ms ul.menu > li.active > a:visited,
+.jm-module.white-ms ul.menu > li > a:hover {
+    background: #f59d2f;
+    color: #fff;
+}
+
+/** modules **/
+
+.jm-module .jm-title-wrap,
+.jm-module.border-ms .jm-module-in {
+    border-color: #9aa6a9;
+}
+
+.jm-module .jm-title-wrap:after {
+    background-image: url('../images/style3/ar-module.png');
+}
+
+.jm-module.white-ms div.jm-title-wrap {
+    background: #e4e7e8; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: -moz-linear-gradient(top, #ffffff 0%, #e4e7e8 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e4e7e8)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%, #e4e7e8 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffffff 0%, #e4e7e8 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffffff 0%, #e4e7e8 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ffffff 0%, #e4e7e8 100%); /* W3C */
+}
+
+.jm-module.white-ms .jm-title-wrap:after {
+    background-image: url('../images/style3/ar-module-default.png');
+}
+
+/** template **/
+
+div.pagination ul li span{
+    background: #67878E;
+    color: #BBC4C6;
+}
+
+div.pagination ul li a:link,
+div.pagination ul li a:visited{
+    color: #fff;
+}
+
+div.pagination ul li span.pagenav{
+    color: #fff;
+}
+
+div.pagination ul li.pagination-start span,
+div.pagination ul li.pagination-prev span,
+div.pagination ul li.pagination-next span,
+div.pagination ul li.pagination-end span{
+    color: #BBC4C6;
+}
+
+ul.pagenav li a:link,
+ul.pagenav li a:visited,
+div.pagination li:first-child,
+div.pagination li{
+    border-color: #9aa6a9;
+}
+
+ul.pagenav li a:hover,
+div.pagination ul li a:hover {
+    background: #67878E;
+    color: #fff;
+}
+
+table.category th {
+    color: #fff;
+    background: #67878E;
+}
+
+table.category td{
+    border-color: #9AA6A9;
+}
+
+table.category th a:link,
+table.category th a:visited{
+    color: #fff;
+}
+
+.article-info{
+    color: #a0c5ca;
+}
+
+div.blog-featured h2,
+div.blog-featured h2 a:link,
+div.blog-featured h2 a:visited,
+div.blog h2,
+div.blog h2 a:link,
+div.blog h2 a:visited,
+div-item-page h2,
+div.item-page h2 a:link,
+div.item-page h2 a:visited,
+ul#archive-items li.row0 h2,
+ul#archive-items li.row0 h2 a:link,
+ul#archive-items li.row0 h2 a:visited {
+    color: #fff;
+}
+
+.row-separator,
+.items-leading .item-separator {
+    background: #9aa6a9;
+}
+
+input.button, button.validate, button {
+    background: #67878e;
+}
+
+input.button:hover, button.validate:hover, button:hover {
+    background: #7d9fa6;
+}
+
+input.button:active, button.validate:active, button:active {
+    background: #67878e;
+}
+
+p.readmore a:link,
+p.readmore a:visited,
+a.readmore:link,
+a.readmore:visited,
+a.readon:link,
+a.readon:visited,
+.djc_readon a:link,
+.djc_readon a:visited,
+.see_details_box a.see_details:link,
+.see_details_box a.see_details:visited,
+#dj-classifieds .djcf_items_blog  .see_details_box a.see_details:link,
+#dj-classifieds .djcf_items_blog  .see_details_box a.see_details:visited,
+.djcf_menu .newad_link_bottom a:link,
+.djcf_menu .newad_link_bottom a:visited,
+.dj_cf_search a.button:link,
+.dj_cf_search a.button:visited,
+.classifieds_buttons a.button:link,
+.classifieds_buttons a.button:visited{
+    background-color: #f59d2f;
+    border-color: #f59d2f;
+}
+
+p.readmore a:hover,
+a.readmore:hover,
+a.readon:hover,
+.djc_readon a:hover,
+#dj-classifieds .djcf_items_blog .see_details_box a.see_details:hover,
+.djcf_menu .newad_link_bottom a:hover,
+.dj_cf_search a.button:hover,
+.classifieds_buttons a.button:hover{
+    background-color: #ffaf4c;
+    border-color: #ffaf4c;
+}
+
+p.readmore a:active,
+a.readmore:active,
+a.readon:active,
+.djc_readon a:active,
+#dj-classifieds .djcf_items_blog .see_details_box a.see_details:active,
+.djcf_menu .newad_link_bottom a:active,
+.dj_cf_search a.button:active,
+.classifieds_buttons a.button:active {
+    background-color: #ffaf4c;
+    border-color: #ffaf4c;
+}
+
+.pane-sliders div.panel h3.title {
+    background: #9aa6a9;
+}
+
+.pane-sliders div.panel h3.title.pane-toggler-down,
+.pane-sliders div.panel h3.title.pane-toggler-down:hover,
+.pane-sliders div.panel h3.title:hover {
+    background: #becacd;
+}
+
+div#article-index {
+    border-color: #9aa6a9
+}
+
+div.pagenavcounter {
+    background: #9aa6a9;
+    border-color: #9aa6a9;
+    color: #fff;
+}
+
+dl.tabs dt.tabs.closed h3 a:hover {
+    color: #becacd;
+}
+
+dl.tabs dt.open {
+    border-bottom: 1px solid #566b70
+}
+
+dl.tabs dt.tabs,
+dl.tabs dt.tabs.closed,
+dl.tabs dt.tabs.closed:hover {
+    border-top-color: #9aa6a9;
+    border-right-color: #9aa6a9;
+    border-left-color: #9aa6a9;
+}
+
+dd.tabs {
+    border-color: #9aa6a9
+}
+
+dl.tabs dt.tabs.open h3 a:link,
+dl.tabs dt.tabs.open h3 a:visited {
+    color: #d3ddf5;
+}
+
+/** reset **/
+
+fieldset legend{
+    color: #a0c5ca;
+}
+
+a:link, a:visited {
+    color: #F59D2F;
+}
+
+/** DJ-IMAGESLIDER **/
+
+.slide-desc-text .slide-title,
+.slide-desc-text .slide-title a{
+    color: #566B70;
+}
+
+.djslider a.readmore:link,
+.djslider a.readmore:visited,
+.jm-module.white-ms a.readmore:link,
+.jm-module.white-ms a.readmore:visited{
+    color: #f59d2f;
+}
+
+.djslider .navigation-container-custom span.load-button {
+	background: #9AA6A9;
+}
+
+.djslider .navigation-container-custom span.load-button-active {
+	background: #F59D2F;
+}
+
+/** DJ-CLASSIFIEDS**/
+
+#dj-classifieds .djcf_items_blog .item_box_in2{
+    border-color: #9AA6A9;
+    color: #fff;
+}
+
+#dj-classifieds .djcf_items_blog .item_box_in2 a:link,
+#dj-classifieds .djcf_items_blog .item_box_in2 a:visited{
+    color: #fff;
+}
+
+#dj-classifieds .djcf_items_blog .promotion.p_bg .item_box_in2,
+#dj-classifieds .djcf_items_blog .promotion.p_bg .item_box_in2 h2 a:link,
+#dj-classifieds .djcf_items_blog .promotion.p_bg .item_box_in2 h2 a:visited{
+    color: #566b70;
+}
+
+#dj-classifieds .djcf_items_blog .item_box_in2 h2 a:link,
+#dj-classifieds .djcf_items_blog .item_box_in2 h2 a:visited,
+#dj-classifieds .dj-category h2 a:link,
+#dj-classifieds .dj-category h2 a:visited {
+    color: #ffffff;
+}
+
+#dj-classifieds .dj-category .cat_row_title,
+#dj-classifieds .dj-item .title_top h2,
+#dj-classifieds .dj-item .general_det span.row_label,
+#dj-classifieds .dj-item .description h2,
+#dj-classifieds .dj-item .custom_det h2,
+#dj-classifieds .dj-item .localization_det h2,
+#dj-classifieds .dj-item .additional h2,
+#dj-classifieds table.dj-items tr.promotion.p_special td,
+#dj-classifieds .dj-additem .title_top,
+#dj-classifieds .dj-additem .djform_row .label span,
+#dj-classifieds .dj-additem .djform_row.extra_fields label,
+#dj-classifieds .dj-cattree-box .title_top,
+#dj-classifieds .dj-item .localization_det .map_info,
+#dj-classifieds #ask_form label,
+#dj-classifieds .dj-item .general_det .price_wrap,
+#dj-classifieds table.paymentdetails td.td_title h2,
+#dj-classifieds .title_top h1,
+.djcf .tip-text .row_title,
+.djcf .tip-title,
+.djcf .tip-text,
+.djcf .tip-text .title,
+.mod_djclassifieds_items .date_cat,
+.mod_djclassifieds_items .date_cat span.price{
+    color:#fff;
+}
+
+#dj-classifieds .dj-additem .djform_row.extra_fields label{
+    color: #9AA6A9;
+}
+
+.jm-module.white-ms .mod_djclassifieds_items .date_cat,
+.jm-module.white-ms .mod_djclassifieds_items .date_cat span.price{
+    color: #566B70
+}
+
+#dj-classifieds .dj-item .general_det .price_wrap,
+#dj-classifieds table.paymentdetails td.td_pdetails div.pd_row_total{
+    background: #67878E;
+    border-color: #67878E
+}
+
+#dj-classifieds .dj-additem .title_top,
+#dj-classifieds .dj-additem .djform_row,
+#dj-classifieds .dj-cattree-box .title_top,
+#dj-classifieds .dj-item .general_det span.row_label,
+#dj-classifieds .dj-item .description h2,
+#dj-classifieds .dj-item .custom_det h2,
+#dj-classifieds .dj-item .localization_det h2,
+#dj-classifieds .dj-item .additional h2,
+#dj-classifieds .dj-item .title_top,
+#dj-classifieds .djcf_items_blog .title,
+#dj-classifieds .djcf_items_blog .promotion.p_bg .title,
+#dj-classifieds .djcf_items_blog .item_box_right span.desc_info,
+#dj-classifieds .djcf_items_blog .item_img img,
+#dj-classifieds .djcf_items_blog .p_special .blog_det .item_box_bottom .item_desc,
+#dj-classifieds .djcf_items_blog .p_special .blog_det .price,
+#dj-classifieds .djcf_items_blog .p_special .blog_det .region,
+#dj-classifieds .djcf_items_blog .blog_det .item_box_bottom .item_desc,
+#dj-classifieds .djcf_items_blog .blog_det .region,
+#dj-classifieds .djcf_items_blog .blog_det .price,
+#dj-classifieds .promotion.p_bg .blog_det .item_box_bottom .item_desc,
+#dj-classifieds .promotion.p_bg .blog_det .price,
+#dj-classifieds .promotion.p_bg .blog_det .region,
+#dj-classifieds .dj-category .cat_row_title,
+#dj-classifieds .dj-category .title img,
+#dj-classifieds table.paymentdetails td.td_pdetails div.pd_row,
+#dj-classifieds table.paymentdetails td.td_title h2,
+#dj-classifieds table.paymentdetails td.table_payment table td.td2,
+#dj-classifieds table.paymentdetails .payment_td,
+#dj-classifieds table.dj-items tr td:last-child,
+#dj-classifieds table.dj-items tr.promotion.p_bg td,
+#dj-classifieds table.dj-items tr td,
+#dj-classifieds table.dj-items tr td.first,
+#dj-classifieds table.dj-items tr.promotion.p_bg td.first,
+#dj-classifieds table.dj-items tr td.last,
+#dj-classifieds table.dj-items tr.promotion.p_bg td.last,
+#dj-classifieds .title_top h1,
+#dj-classifieds table.dj-items .icon img,
+.mod_djclassifieds_items .item,
+.mod_djclassifieds_items .title img,
+.djcf .tip-text .row_title,
+.tip-text .row_title, .tip-text .title{
+    border-color: #9AA6A9;
+}
+
+#dj-classifieds .djcf_items_blog .promotion.p_border .item_box_in2,
+#dj-classifieds table.dj-items tr.promotion.p_border td:last-child,
+#dj-classifieds table.dj-items tr.promotion.p_border td,
+#dj-classifieds table.dj-items tr.promotion.p_border td.first,
+#dj-classifieds table.dj-items tr.promotion.p_border td.last {
+	border-color: #20B1D5;
+}
+
+#dj-classifieds .dj-additem .title_top:after,
+#dj-classifieds .dj-cattree-box .title_top:after,
+#dj-classifieds .dj-item .title_top:after,
+#dj-classifieds .dj-category .cat_row_title:after,
+#dj-classifieds table.paymentdetails td.td_title h2:after,
+#dj-classifieds .title_top h1:after{
+    background-image: url('../images/style3/ar-module.png');
+}
+
+#dj-classifieds .dj-item .general_det .price_wrap span.row_label {
+    background: url(../images/icons_light/badge_small.png) no-repeat left center;
+}
+
+#dj-classifieds .dj-item .general_det .contact span.row_label {
+    background: url(../images/icons_light/mail_small.png) left top no-repeat;
+}
+
+#dj-classifieds .dj-item .general_det .added span.row_label {
+    background: url(../images/icons_light/calendar_small.png) left top no-repeat;
+}
+
+#dj-classifieds .dj-item .general_det .user_name span.row_label {
+    background: url(../images/icons_light/people_small.png) left top no-repeat;
+}
+
+#dj-classifieds .dj-item .description h2 {
+    background: url(../images/icons_light/info_small.png) left top no-repeat;
+}
+
+#dj-classifieds .dj-item .custom_det h2 {
+    background: url(../images/icons_light/list_small.png) left top no-repeat;
+}
+
+#dj-classifieds .dj-item .localization_det h2 {
+    background: url(../images/icons_light/flag_small.png) left top no-repeat;
+}
+
+#dj-classifieds .dj-item .additional h2 {
+    background: url(../images/icons_light/list_small.png) left top no-repeat;
+}
+
+#dj-classifieds .dj-additem  .djform_field a.add_another_image {
+    background: url(../images/icons_light/plus_small.png) left top no-repeat;
+}
+
+#dj-classifieds .djcf_items_blog .item_desc .label_title,
+#dj-classifieds .djcf_items_blog .promotion.p_special .region .label_title {
+    background: url(../images/icons_light/info_small.png) left top no-repeat;
+}
+
+#dj-classifieds .djcf_items_blog .region .label_title,
+#dj-classifieds .djcf_items_blog .promotion.p_special .region .label_title {
+    background: url(../images/icons_light/direction_small.png) left top no-repeat;
+}
+
+#dj-classifieds .djcf_items_blog .price .label_title,
+#dj-classifieds .djcf_items_blog .promotion.p_special .price .label_title {
+    background: url(../images/icons_light/badge_small.png) left top no-repeat;
+}
+
+#dj-classifieds .djcf_items_blog .date_start .label_title,
+#dj-classifieds .djcf_items_blog .promotion.p_special .date_start .label_title {
+    background: url(../images/icons_light/calendar_small.png) left top no-repeat;
+}
+
+#dj-classifieds .djcf_items_blog .promotion.p_bg .item_desc .label_title {
+    background: url(../images/style3/icons/info_small.png) left top no-repeat;
+}
+
+#dj-classifieds .djcf_items_blog .promotion.p_special.p_bg .region .label_title,
+#dj-classifieds .djcf_items_blog .promotion.p_bg .region .label_title {
+    background: url(../images/style3/icons/direction_small.png) left top no-repeat;
+}
+
+#dj-classifieds .djcf_items_blog .promotion.p_special.p_bg .price .label_title,
+#dj-classifieds .djcf_items_blog .promotion.p_bg .price .label_title {
+    background: url(../images/style3/icons/badge_small.png) left top no-repeat;
+}
+
+#dj-classifieds .djcf_items_blog .promotion.p_special.p_bg .date_start .label_title,
+#dj-classifieds .djcf_items_blog .promotion.p_bg .date_start .label_title {
+    background: url(../images/style3/icons/calendar_small.png) left top no-repeat;
+}
+
+#dj-classifieds table.dj-items a.edit{
+    background: url(../images/icons_light/cl_edit.png) no-repeat left center
+}
+
+#dj-classifieds table.dj-items a.renew{
+    background: url(../images/icons_light/cl_renew.png) no-repeat left center
+}
+
+#dj-classifieds table.dj-items a.delete{
+    background: url(../images/icons_light/cl_delete.png) no-repeat left center
+}
+
+#dj-classifieds .useritems .dj-items td.date_exp span {
+    color: #83dc01 !important;
+}
+
+#dj-classifieds table.dj-items .main_title th {
+    color: #fff;
+    background: #67878E;
+}
+
+#dj-classifieds table.dj-items .main_title th.active {
+    background: #7ba0a8;
+}
+
+#dj-classifieds table.dj-items tr.promotion.p_bg td {
+    color: #566B70;
+}
+
+#dj-classifieds table.dj-items tr.promotion.p_border .icon img{
+    background: #20B1D5;
+}
+
+#dj-classifieds table.dj-items td a:link,
+#dj-classifieds table.dj-items td a:visited{
+    color: #F59D2F !important;
+}
+
+#dj-classifieds table.dj-items td.name a:link,
+#dj-classifieds table.dj-items td.name a:visited {
+    color: #ffffff !important;
+}
+
+#dj-classifieds table.dj-items tr.promotion.p_bg td.name a:link,
+#dj-classifieds table.dj-items tr.promotion.p_bg td.name a:visited {
+    color: #566B70 !important;
+}
+
+.djcf .tip-title,
+.djcf .tip-text{
+    background: #566B70
+}
+
+.mod_djclassifieds_items div.title a.title:link,
+.mod_djclassifieds_items div.title a.title:visited {
+	color: #ffffff;
+}
+
+.jm-module.white-ms .mod_djclassifieds_items div.title a.title:link,
+.jm-module.white-ms .mod_djclassifieds_items div.title a.title:visited {
+	color: #566B70;
+}
+
+/** dj-catalog **/
+	
+.djf_mod .djf_text h3 a:link,
+.djf_mod .djf_text h3 a:visited,
+#djcatalog .djc_subcategories .djc_title h3 a:link,
+#djcatalog .djc_subcategories .djc_title h3 a:visited,
+#djcatalog .djc_items .djc_title h3 a:link, 
+#djcatalog .djc_items .djc_title h3 a:visited, 
+#djcatalog .djc_related_items .djc_title h3 a:link,
+#djcatalog .djc_related_items .djc_title h3 a:visited,
+.mod_djc_items h4 a:link,
+.mod_djc_items h4 a:visited,
+#djcatalog .djc_items_table td.djc_td_title a:link,
+#djcatalog .djc_items_table td.djc_td_title a:visited {
+	color: #ffffff;
+}
+
+.jm-module.white-ms .mod_djc_items h4 a:link,
+.jm-module.white-ms .mod_djc_items h4 a:visited,
+#djcatalog .djc_items .featured_item .djc_title h3 a:link, 
+#djcatalog .djc_items .featured_item .djc_title h3 a:visited, 
+#djcatalog .djc_related_items .featured_item .djc_title h3 a:link,
+#djcatalog .djc_related_items .featured_item .djc_title h3 a:visited,
+#djcatalog .djc_items_table .featured_item td.djc_td_title a:link,
+#djcatalog .djc_items_table .featured_item td.djc_td_title a:visited {
+	color: #566b70;
+}
+
+#djcatalog .djc_subcategories h2.djc_title,
+#djcatalog h3.djc_related_title{
+    color:#fff;
+}
+
+#djcatalog .djc_item.featured_item .djc_item_in,
+#djcatalog.djc_list table.djc_items_table tr.featured_item{
+    color: #566b70;
+}
+
+#djcatalog .djc_subcategories h2.djc_title:after,
+#djcatalog h3.djc_related_title:after{
+    background-image: url('../images/style3/ar-module.png');
+}
+
+#djcatalog .djc_subcategories h2.djc_title,
+#djcatalog h3.djc_related_title,
+#djcatalog .djc_items .djc_item_bg,
+#djcatalog .djc_subcategories_grid .djc_image img,
+#djcatalog span.djc_litab,
+#djcatalog div.djc_ultab,
+#djcatalog .djc_filters .djc_filters_in,
+#djcatalog .djc_order .djc_order_in{
+    border-color: #9AA6A9;
+}
+
+#djcatalog span.djc_litab {
+	color: #9AA6A9;
+}
+
+#djcatalog span.djc_litab_active{
+    background: #566B70;
+    border-bottom-color: #566B70;
+    color: #ffffff;
+}
+
+#djcatalog span.djc_litab:hover {
+    background: #9AA6A9;
+    border: 1px solid #9AA6A9;
+}
+
+#djcatalog h3.djc_h3acc {
+    background: #9aa6a9;
+    color: #fff;
+}
+
+#djcatalog h3.djc_h3acc:hover,
+#djcatalog h3.djc_h3acc.djc_h3acc_active,
+#djcatalog h3.djc_h3acc.djc_h3acc_active:hover {
+    background: #becacd;
+}
+
+.djf_mod .djf_pag span{
+    background: #9AA6A9;
+}
+
+.djf_mod .djf_pag span.active,
+.djf_mod .djf_pag span:hover{
+    background: #f59d2f;
+}
+
+/** typography **/
+
+.jm-code{
+    background: #67878E;
+    border-color: #43575c;
+}
+
+.jm-block span{
+    background: #67878E;
+    color: #fff;
+}
+
+.jm-block.second span{
+    background: #43575c;
+    color: #fff;
+}
+
+h3.jm-typo-title{
+    border-color: #9AA6A9;
+}
+
+.quote-left{
+    background-image: url("../images/style3/quote-left.png");
+}
+
+.quote-right{
+    background-image: url("../images/style3/quote-right.png");
+}
+
+ul.jm-light li, ul.jm-light ul li{
+    color: #afd9e3;
+}
+
+ul.jm-gray li, ul.jm-gray ul li{
+    color: #ddd;
+}
+
+.border_img1{
+    border-color: #9AA6A9;
+}
+
+.border_img2{
+    background: #67878E;
+}
+
+p.badge {
+    background: url(../images/icons_light/badge.png) no-repeat left top;
+}
+
+p.calendar {
+    background: url(../images/icons_light/calendar.png) no-repeat left top;
+}
+
+p.chat {
+    background: url(../images/icons_light/chat.png) no-repeat left top;
+}
+
+p.check {
+    background: url(../images/icons_light/check.png) no-repeat left top;
+}
+
+p.cloud {
+    background: url(../images/icons_light/cloud.png) no-repeat left top;
+}
+
+p.direction {
+    background: url(../images/icons_light/direction.png) no-repeat left top;
+}
+
+p.divide {
+    background: url(../images/icons_light/divide.png) no-repeat left top;
+}
+
+p.error {
+    background: url(../images/icons_light/error.png) no-repeat left top;
+}
+
+p.fire {
+    background: url(../images/icons_light/fire.png) no-repeat left top;
+}
+
+p.flag {
+    background: url(../images/icons_light/flag.png) no-repeat left top;
+}
+
+p.heart {
+    background: url(../images/icons_light/heart.png) no-repeat left top;
+}
+
+p.home {
+    background: url(../images/icons_light/home.png) no-repeat left top;
+}
+
+p.info {
+    background: url(../images/icons_light/info.png) no-repeat left top;
+}
+
+p.list {
+    background: url(../images/icons_light/list.png) no-repeat left top;
+}
+
+p.mail {
+    background: url(../images/icons_light/mail.png) no-repeat left top;
+}
+
+p.people {
+    background: url(../images/icons_light/people.png) no-repeat left top;
+}
+
+p.star {
+    background: url(../images/icons_light/star.png) no-repeat left top;
+}
+
+p.stat {
+    background: url(../images/icons_light/stat.png) no-repeat left top;
+}
+
+.view .mask h2 a:link,
+.view .mask h2 a:visited{
+    color: #566B70;
+}
+
+.view .mask p{
+    color: #566B70;
+}

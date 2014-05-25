@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+	<name>DJ Classifieds</name>
+	<creationDate>July 2011</creationDate>
+	<author>DJ-Extensions.com</author>
+	<authorEmail>contact@design-joomla.eu</authorEmail>
+	<authorUrl>http://design-joomla.com</authorUrl>
+	<copyright>design-joomla.com</copyright>
+	<license>GPL</license>
+	<version>2.1.1</version> 
+	<description>DJ Classifieds - Advertising Component</description>	
+	<install>
+		<sql>
+            <file charset="utf8" driver="mysql">sql/install.sql</file>
+        </sql>
+    </install>
+	
+	<uninstall>
+		<sql>
+            <file charset="utf8" driver="mysql">sql/uninstall.sql</file>
+        </sql>
+    </uninstall>
+    
+    <update>
+		<schemas>
+			<schemapath type="mysql">sql/updates</schemapath>
+		</schemas>
+	</update>
+	
+	<administration>
+		<menu link="option=com_djclassifieds" img="components/com_djclassifieds/images/icon-16-djclassifieds.png">COM_DJCLASSIFIEDS</menu>
+		<files folder="administrator">
+			<filename>admin.djclassifieds.php</filename>
+			<filename>config.xml</filename>		
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<folder>assets</folder>			
+			<folder>controllers</folder>
+			<folder>images</folder>
+			<folder>language</folder>
+			<folder>lib</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+	</administration>
+	<files folder="site">		
+		<filename>controller.php</filename>
+		<filename>defines.djclassifieds.php</filename>
+		<filename>djclassifieds.php</filename>
+		<filename>gpl.txt</filename>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+		<folder>assets</folder>
+		<folder>controllers</folder>		
+		<folder>images</folder>		
+		<folder>language</folder>		
+		<folder>models</folder>		
+		<folder>views</folder>				
+	</files>		
+	<scriptfile>script.djclassifieds.php</scriptfile>	
+    <config>
+		<fields>
+			<fieldset>
+				<field name="exp_days" default="7" />
+				<field name="durations_list" default="1" />
+				<field name="notify_days" default="3" />
+				<field name="notify_days_trigger" default="1"/>
+				<field name="promotion" default="1" />
+				<field name="user_type" default="1"/>
+				<field name="autopublish" default="1"/>
+				<field name="notify_admin" default="0"/>
+				<field name="notify_user_email" default="" />
+				<field name="abuse_reporting" default="1"/>
+				<field name="favourite" default="1"/>
+				<field name="unit_price"  default="EUR" />
+				<field name="unit_price_position"  default="0" />
+				<field name="show_contact"  default="1" />
+				<field name="show_regions"  default="1" />				
+				<field name="show_googlemap"  default="1" />
+				<field name="gm_zoom"  default="10" />				
+				<field name="show_gm_driving"  default="0" />
+				<field name="gm_icon"  default="0" />
+				<field name="include_css"  default="1" />
+				<field name="limit_djitem_show"  default="7"/>
+				<field name="blog_columns_number" default="2" />
+				<field name="blog_desc_position" default="right" />
+				<field name="img_limit" default="5" />
+				<field name="img_maxsize" default="0" />
+				<field name="introdesc_char_limit" default="120" />
+				<field name="show_adsn_cat" type="list"  default="1" />
+				<field name="show_subcats" default="1" />
+				<field name="subcats_dir" default="0" />
+				<field name="desc_editor" default="1" />
+				<field name="allow_htmltags" default="1" />
+				<field name="allowed_htmltags" default="div;p;span;strong;i;b;em;ul;li;ol;br" />
+				<field name="showitem_jump" default="0" />
+				<field name="category_jump" default="0" />
+				<field name="title_breadcrumb"  default="1" />
+				<field name="tooltip_img"  default="1" />
+				<field name="tooltip_title"  default="1" />
+				<field name="tooltip_images"  default="3" />
+				<field name="tooltip_price"  default="1" />
+				<field name="items_ordering"  default="date_e"/>
+				<field name="items_ordering_dir" default="desc" />
+				<field name="column_loc" default="1"/>
+				<field name="column_price" default="1"/>
+				<field name="column_date_a" default="1"/>
+				<field name="column_date_e" default="1"/>
+				<field name="column_displayed" default="1"/>				
+				<field name="ask_seller" default="1"/>
+				<field name="ask_seller_type" default="0"/>
+				<field name="showaddetails" default="1"/>
+				<field name="show_start_date" default="1"/>
+				<field name="showauthor" default="1"/>
+				<field name="cattree_type" default=""/>
+				<field name="cattree_cols" default="3"/>
+				<field name="cattree_levels" default="0"/>
+				<field name="cattree_ic" default="1"/>
+				<field name="rss_feed" default="1"/>
+				<field name="icon_new" default="1"/>
+				<field name="icon_new_time" default="3"/>
+				<field name="sb_position" default="bottom"/>				
+				<field name="sb_code" default="&lt;div class=&quot;addthis_toolbox addthis_default_style &quot;&gt;&lt;a class=&quot;addthis_button_preferred_1&quot;&gt;&lt;/a&gt;&lt;a class=&quot;addthis_button_preferred_2&quot;&gt;&lt;/a&gt;&lt;a class=&quot;addthis_button_preferred_3&quot;&gt;&lt;/a&gt;&lt;a class=&quot;addthis_button_preferred_4&quot;&gt;&lt;/a&gt;&lt;a class=&quot;addthis_button_compact&quot;&gt;&lt;/a&gt;&lt;a class=&quot;addthis_counter addthis_bubble_style&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-501a7c83604a8bb4&quot;&gt;&lt;/script&gt;"/>				
+				<field name="th_width" default="270"/>
+				<field name="th_height" default="180" />
+				<field name="bigth_width"  default="600" />
+				<field name="bigth_height" default="0"/>
+				<field name="smallth_width" default="56" />
+				<field name="smallth_height"  default="32" />
+				<field name="middleth_width"  default="150" />
+				<field name="middleth_height"  default="110" />
+				<field name="catth_width" default="68" />
+				<field name="catth_height" default="50" />
+				<field name="ask_limit_one"  default="5" />
+				<field name="ask_limit_hour"  default="15" />
+				<field name="captcha"  default="0" />
+				<field name="terms"  default="1" />
+				<field name="terms_article_id"  default="1" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

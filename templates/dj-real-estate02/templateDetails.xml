@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+	<name>dj-real-estate02</name>
+	<creationDate>14/11/2012</creationDate>
+	<author>joomla-monster.com</author>
+	<authorEmail>joomla-monster@design-joomla.eu</authorEmail>
+	<authorUrl>joomla-monster.com</authorUrl>
+	<copyright>Copyright (C) 2005 - 2011 Open Source Matters, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>2.5.0</version>
+	<description><![CDATA[
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+		<style>
+			span.readonly.mod-desc {
+				clear: both;
+			}
+			.jm-row {
+				display: inline-block;
+				clear: both;
+				width: 100%;
+				font-weight: normal;
+				font-size: 12px;
+				color: #444444;
+			}
+			.jm-row a:link,
+			.jm-row a:visited {
+				color: #e46a1a;
+			}
+			.jm-row a:hover {
+				text-decoration: underline;
+			}
+			#jm-left {
+				float: left;
+				width: 49%;
+				min-width: 250px;
+				padding-bottom: 30px;
+			}
+			#jm-right {
+				float: right;
+				width: 49%;
+				min-width: 300px;
+				font-family: 'Droid Serif', serif;
+				font-size: 14px;
+				color: #272a2c;
+				padding: 0 0 30px;
+				text-align: left;
+			}
+			#jm-right div {
+				padding: 0 0 0 85px;
+			}
+			#jm-left a {
+				display: block;
+				margin: 0 0 15px;
+			}
+			.jm-row img {
+				float: none;
+				margin: 0;
+			}
+			#jm-left span {
+				font-family: 'Droid Serif', serif;
+				font-size: 14px;
+				color: #272a2c;
+				display: block;
+			}
+			#jm-right span {
+				font-size: 18px;
+				color: #137baf;
+			}
+			#jm-right div.jm-version {
+				color: #999999;
+				font-size: 12px;
+				padding: 5px 0 0 145px;
+			}
+			.jm-col {
+				float: left;
+				padding: 0 20px 0 0;
+				margin: 0 20px 20px 0;
+				border-right: 1px solid #e4e4e4;
+			}
+			.jm-col:last-child {
+				border: none;
+				padding: 0;
+				margin: 0 0 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="jm-row">
+			<div id="jm-left">
+				<a target="_blank" href="http://www.joomla-monster.com"><img src="http://joomla-monster.com/images/jm-logo.png" /></a>
+				<span>Templates for Joomla! CMS</span>
+			</div>		
+			<div id="jm-right">
+				<div>Template <span>DJ-Real-Estate02</span><br/></div>
+				<div class="jm-version">Template version: EF 1.1.0</div>
+			</div>
+		</div>
+		<div class="jm-row">
+			<div class="jm-col">Our site: <a target="_blank" href="http://www.joomla-monster.com">www.joomla-monster.com</a></div>
+			<div class="jm-col">DJ-Extensions: <a target="_blank" href="http://www.dj-extensions.com">www.dj-extensions.com</a></div>
+			<div class="jm-col">Custom Joomla services: <a target="_blank" href="http://www.design-joomla.eu">www.design-joomla.eu</a></div>
+		</div>
+	</body>
+	]]></description>
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>index.php</filename>
+		<filename>index.html</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>admin</folder>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>lib</folder>
+		<folder>language</folder>
+	</files>
+	<positions>
+        <position>top-bar1</position>
+        <position>top-bar2</position>
+        <position>top-bar3</position>
+        <position>header</position>
+        <position>dj-menu-top</position>
+        <position>breadcrumbs</position>
+		<position>top</position>
+		<position>content-top1</position>
+		<position>content-top2</position>
+		<position>content-bottom1</position>
+		<position>content-bottom2</position>
+		<position>bottom1</position>
+		<position>bottom2</position>
+		<position>bottom-menu</position>
+		<position>copyrights</position>
+        <position>left-column</position>
+        <position>right-column</position>
+	</positions>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_dj-real-estate02.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_dj-real-estate02.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="/templates/dj-real-estate02/admin">
+			<!-- BASIC SETTINGS -->
+			<fieldset name="basic" label="TPL_DJ-REAL-ESTATE02_BASIC_SETTINGS_LABEL">
+				<field type="loader" />
+				<field name="Logo" type="media"	preview="false" hide_default="1" label="TPL_DJ-REAL-ESTATE02_LOGO_LABEL" description="TPL_DJ-REAL-ESTATE02_LOGO_DESC" />
+				<field name="SiteTitle" type="text" size="35" label="TPL_DJ-REAL-ESTATE02_LOGO_TEXT_LABEL" description="TPL_DJ-REAL-ESTATE02_LOGO_TEXT_DESC" filter="string" />
+				<field name="SiteDescription" type="text" size="35" label="TPL_DJ-REAL-ESTATE02_SITE_DESCRIPTION_LABEL" description="TPL_DJ-REAL-ESTATE02_SITE_DESCRIPTION_DESC" filter="string" />
+				<field name="StyleSwitcher" type="list" default="0" label="TPL_DJ-REAL-ESTATE02_STYLE_SWITCHER_LABEL" description="TPL_DJ-REAL-ESTATE02_STYLE_SWITCHER_DESC">
+					<option value="0">TPL_DJ-REAL-ESTATE02_ENABLE_LABEL</option>
+					<option value="1">TPL_DJ-REAL-ESTATE02_DISABLE_LABEL</option>
+				</field>
+				<field name="TemplateStyle" type="list" default="1" label="TPL_DJ-REAL-ESTATE02_TEMPLATE_STYLE_LABEL" description="TPL_DJ-REAL-ESTATE02_TEMPLATE_STYLE_DESC">
+					<option value="1">TPL_DJ-REAL-ESTATE02_TEMPLATE_STYLE_STYLE1_LABEL</option>
+					<option value="2">TPL_DJ-REAL-ESTATE02_TEMPLATE_STYLE_STYLE2_LABEL</option>
+					<option value="3">TPL_DJ-REAL-ESTATE02_TEMPLATE_STYLE_STYLE3_LABEL</option>	
+				</field>
+				<field name="fontSizeSwitcher" type="list" default="1" label="TPL_DJ-REAL-ESTATE02_FONT_SIZE_SWITCHER_LABEL" description="TPL_DJ-REAL-ESTATE02_FONT_SIZE_SWITCHER_DESC">
+					<option value="0">TPL_DJ-REAL-ESTATE02_ENABLE_LABEL</option>
+					<option value="1">TPL_DJ-REAL-ESTATE02_DISABLE_LABEL</option>
+				</field>
+				<field name="backToTop" type="list" default="0" label="TPL_DJ-REAL-ESTATE02_BACKTOTOP_LABEL" description="TPL_DJ-REAL-ESTATE02_BACKTOTOP_DESC">
+					<option value="0">TPL_DJ-REAL-ESTATE02_ENABLE_LABEL</option>
+					<option value="1">TPL_DJ-REAL-ESTATE02_DISABLE_LABEL</option>
+				</field>
+				<field name="FavIconImg" type="media" preview="false" label="TPL_DJ-REAL-ESTATE02_FAVICON_LABEL" description="TPL_DJ-REAL-ESTATE02_FAVICON_DESC" />
+			</fieldset>
+			<!-- TEMPLATE LAYOUT -->
+			<fieldset name="layout" label="TPL_DJ-REAL-ESTATE02_TEMPLATE_LAYOUT_LABEL">
+				<field name="TemplateWidth" type="text" default="960" class="unit-px" label="TPL_DJ-REAL-ESTATE02_TEMPLATE_WIDTH_LABEL" description="TPL_DJ-REAL-ESTATE02_TEMPLATE_WIDTH_DESC" />
+				<field name="TabletWidth" type="text" default="800" class="unit-px" label="TPL_DJ-REAL-ESTATE02_TABLET_WIDTH_LABEL" description="TPL_DJ-REAL-ESTATE02_TABLET_WIDTH_DESC" />
+				<field name="MobileWidth" type="text" default="480" class="unit-px" label="TPL_DJ-REAL-ESTATE02_MOBILE_WIDTH_LABEL" description="TPL_DJ-REAL-ESTATE02_MOBILE_WIDTH_DESC" />
+				<field name="SchemeOption" type="radio" default="left-content_right" class="jmradio" label="TPL_DJ-REAL-ESTATE02_SCHEME_LAYOUT_LABEL" description="TPL_DJ-REAL-ESTATE02_SCHEME_LAYOUT_DESC">
+					<option value="left-content_right">TPL_DJ-REAL-ESTATE02_SCHEME_LCR_LABEL</option>
+					<option value="left-right_content">TPL_DJ-REAL-ESTATE02_SCHEME_LRC_LABEL</option>
+					<option value="content_right-left">TPL_DJ-REAL-ESTATE02_SCHEME_CRL_LABEL</option>
+				</field>
+				<field name="ColumnLeftWidth" type="text" default="25" class="unit-percent" label="TPL_DJ-REAL-ESTATE02_LEFTCOL_WIDTH_LABEL" description="TPL_DJ-REAL-ESTATE02_LEFTCOL_WIDTH_DESC" />
+				<field name="ColumnRightWidth" type="text" default="25" class="unit-percent" label="TPL_DJ-REAL-ESTATE02_RIGHTCOL_WIDTH_LABEL" description="TPL_DJ-REAL-ESTATE02_RIGHTCOL_WIDTH_DESC" />				
+			</fieldset>
+			<!-- FONT SETTINGS -->
+			<fieldset name="font" label="TPL_DJ-REAL-ESTATE02_FONT_SETTINGS_LABEL">
+				<field name="spacer_font_1" type="spacer" class="jmtext" label="TPL_DJ-REAL-ESTATE02_GLOBAL_FONT_SETTINGS_SPACER"/>	
+				<field name="fontSizeSelector" type="list" default="12" label="TPL_DJ-REAL-ESTATE02_FONT_SIZE_SELECTOR_LABEL" description="TPL_DJ-REAL-ESTATE02_FONT_SIZE_SELECTOR_DESC">
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+					<option value="29">29</option>
+					<option value="30">30</option>
+				</field>
+				<field name="bodyFontChooser" type="optiongroups" default="0" class="jmradio" label="TPL_DJ-REAL-ESTATE02_BODY_FONT_LABEL" description="TPL_DJ-REAL-ESTATE02_BODY_FONT_DESC">
+					<group value="0" label="TPL_DJ-REAL-ESTATE02_STANDARD_FONT_LABEL">
+						<field name="fontFaceChooser" type="list" default="Arial, Helvetica, sans-serif" label="TPL_DJ-REAL-ESTATE02_FONT_NAME_LABEL" description="TPL_DJ-REAL-ESTATE02_FONT_NAME_DESC">
+							<option value="Arial, Helvetica, sans-serif">TPL_DJ-REAL-ESTATE02_ARIAL_LABEL</option>
+							<option value="Tahoma">TPL_DJ-REAL-ESTATE02_TAHOMA_LABEL</option>
+							<option value="Verdana, Geneva, Arial, Helvetica, sans-serif">TPL_DJ-REAL-ESTATE02_VERDANA_LABEL</option>
+							<option value="Times New Roman, Times, serif;">TPL_DJ-REAL-ESTATE02_TIMESNEWROMAN_LABEL</option>
+						</field>
+					</group>
+					<group value="1" label="TPL_DJ-REAL-ESTATE02_CUSTOM_FONT_LABEL">
+						<field name="customFont" default="Tahoma" size="35" label="TPL_DJ-REAL-ESTATE02_FONT_NAME_LABEL" description="TPL_DJ-REAL-ESTATE02_CUSTOM_FONT_NAME_DESC" />
+					</group>
+					<group value="2" label="TPL_DJ-REAL-ESTATE02_GOOGLEWEBFONT_LABEL">
+						<field name="bodyGooglewebfontChooser" size="55" label="TPL_DJ-REAL-ESTATE02_GOOGLE_FONT_URL_LABEL" description="TPL_DJ-REAL-ESTATE02_GOOGLE_FONT_URL_DESC" />
+						<field name="bodyGooglewebfontFamily" size="55" label="TPL_DJ-REAL-ESTATE02_GOOGLE_FONT_FAMILY_LABEL" description="TPL_DJ-REAL-ESTATE02_GOOGLE_FONT_FAMILY_DESC" />
+					</group>
+				</field>
+                <field name="spacer_font_2" type="spacer" class="jmtext" label="TPL_DJ-REAL-ESTATE02_DJMENU_FONT_SETTINGS_SPACER" />
+                <field name="djmenuFontSizeSelector" type="list" default="13" label="TPL_DJ-REAL-ESTATE02_FONT_SIZE_SELECTOR_LABEL" description="TPL_DJ-REAL-ESTATE02_FONT_SIZE_SELECTOR_DESC">
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                </field>
+                <field name="djmenuFontChooser" type="optiongroups" default="0" class="jmradio" label="TPL_DJ-REAL-ESTATE02_BODY_FONT_LABEL" description="TPL_DJ-REAL-ESTATE02_BODY_FONT_DESC">
+                    <group value="0" label="TPL_DJ-REAL-ESTATE02_STANDARD_FONT_LABEL">
+                        <field name="djmenuFontFaceChooser" type="list" default="Arial, Helvetica, sans-serif" label="TPL_DJ-REAL-ESTATE02_FONT_NAME_LABEL" description="TPL_DJ-REAL-ESTATE02_FONT_NAME_DESC">
+                            <option value="Arial, Helvetica, sans-serif">TPL_DJ-REAL-ESTATE02_ARIAL_LABEL</option>
+                            <option value="Tahoma">TPL_DJ-REAL-ESTATE02_TAHOMA_LABEL</option>
+                            <option value="Verdana, Geneva, Arial, Helvetica, sans-serif">TPL_DJ-REAL-ESTATE02_VERDANA_LABEL</option>
+                            <option value="Times New Roman, Times, serif;">TPL_DJ-REAL-ESTATE02_TIMESNEWROMAN_LABEL</option>
+                        </field>
+                    </group>
+                    <group value="1" label="TPL_DJ-REAL-ESTATE02_CUSTOM_FONT_LABEL">
+                        <field name="djmenuCustomFont" default="Tahoma" size="35" label="TPL_DJ-REAL-ESTATE02_FONT_NAME_LABEL" description="TPL_DJ-REAL-ESTATE02_CUSTOM_FONT_NAME_DESC" />
+                    </group>
+                    <group value="2" label="TPL_DJ-REAL-ESTATE02_GOOGLEWEBFONT_LABEL">
+                        <field name="djmenuGooglewebfontChooser" size="55" label="TPL_DJ-REAL-ESTATE02_GOOGLE_FONT_URL_LABEL" description="TPL_DJ-REAL-ESTATE02_GOOGLE_FONT_URL_DESC" />
+                        <field name="djmenuGooglewebfontFamily" size="55" label="TPL_DJ-REAL-ESTATE02_GOOGLE_FONT_FAMILY_LABEL" description="TPL_DJ-REAL-ESTATE02_GOOGLE_FONT_FAMILY_DESC" />
+                    </group>
+                </field>
+                <field name="spacer_font_3" type="spacer" class="jmtext" label="TPL_DJ-REAL-ESTATE02_HEADINGS_FONT_SETTINGS_SPACER" />
+                <field name="headingsFontSizeSelector" type="list" default="24" label="TPL_DJ-REAL-ESTATE02_FONT_SIZE_SELECTOR_LABEL" description="TPL_DJ-REAL-ESTATE02_FONT_SIZE_SELECTOR_DESC">
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                </field>
+                <field name="headingsFontChooser" type="optiongroups" default="0" class="jmradio" label="TPL_DJ-REAL-ESTATE02_BODY_FONT_LABEL" description="TPL_DJ-REAL-ESTATE02_BODY_FONT_DESC">
+                    <group value="0" label="TPL_DJ-REAL-ESTATE02_STANDARD_FONT_LABEL">
+                        <field name="headingsFontFaceChooser" type="list" default="Arial, Helvetica, sans-serif" label="TPL_DJ-REAL-ESTATE02_FONT_NAME_LABEL" description="TPL_DJ-REAL-ESTATE02_FONT_NAME_DESC">
+                            <option value="Arial, Helvetica, sans-serif">TPL_DJ-REAL-ESTATE02_ARIAL_LABEL</option>
+                            <option value="Tahoma">TPL_DJ-REAL-ESTATE02_TAHOMA_LABEL</option>
+                            <option value="Verdana, Geneva, Arial, Helvetica, sans-serif">TPL_DJ-REAL-ESTATE02_VERDANA_LABEL</option>
+                            <option value="Times New Roman, Times, serif;">TPL_DJ-REAL-ESTATE02_TIMESNEWROMAN_LABEL</option>
+                        </field>
+                    </group>
+                    <group value="1" label="TPL_DJ-REAL-ESTATE02_CUSTOM_FONT_LABEL">
+                        <field name="headingsCustomFont" default="Tahoma" size="35" label="TPL_DJ-REAL-ESTATE02_FONT_NAME_LABEL" description="TPL_DJ-REAL-ESTATE02_CUSTOM_FONT_NAME_DESC" />
+                    </group>
+                    <group value="2" label="TPL_DJ-REAL-ESTATE02_GOOGLEWEBFONT_LABEL">
+                        <field name="headingsGooglewebfontChooser" size="55" label="TPL_DJ-REAL-ESTATE02_GOOGLE_FONT_URL_LABEL" description="TPL_DJ-REAL-ESTATE02_GOOGLE_FONT_URL_DESC" />
+                        <field name="headingsGooglewebfontFamily" size="55" label="TPL_DJ-REAL-ESTATE02_GOOGLE_FONT_FAMILY_LABEL" description="TPL_DJ-REAL-ESTATE02_GOOGLE_FONT_FAMILY_DESC" />
+                    </group>
+                </field>
+                <field name="spacer_font_4" type="spacer" class="jmtext" label="TPL_DJ-REAL-ESTATE02_ARTICLES_FONT_SETTINGS_SPACER" />
+                <field name="articlesFontSizeSelector" type="list" default="24" label="TPL_DJ-REAL-ESTATE02_FONT_SIZE_SELECTOR_LABEL" description="TPL_DJ-REAL-ESTATE02_FONT_SIZE_SELECTOR_DESC">
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                </field>
+                <field name="articlesFontChooser" type="optiongroups" default="0" class="jmradio" label="TPL_DJ-REAL-ESTATE02_BODY_FONT_LABEL" description="TPL_DJ-REAL-ESTATE02_BODY_FONT_DESC">
+                    <group value="0" label="TPL_DJ-REAL-ESTATE02_STANDARD_FONT_LABEL">
+                        <field name="articlesFontFaceChooser" type="list" default="Arial, Helvetica, sans-serif" label="TPL_DJ-REAL-ESTATE02_FONT_NAME_LABEL" description="TPL_DJ-REAL-ESTATE02_FONT_NAME_DESC">
+                            <option value="Arial, Helvetica, sans-serif">TPL_DJ-REAL-ESTATE02_ARIAL_LABEL</option>
+                            <option value="Tahoma">TPL_DJ-REAL-ESTATE02_TAHOMA_LABEL</option>
+                            <option value="Verdana, Geneva, Arial, Helvetica, sans-serif">TPL_DJ-REAL-ESTATE02_VERDANA_LABEL</option>
+                            <option value="Times New Roman, Times, serif;">TPL_DJ-REAL-ESTATE02_TIMESNEWROMAN_LABEL</option>
+                        </field>
+                    </group>
+                    <group value="1" label="TPL_DJ-REAL-ESTATE02_CUSTOM_FONT_LABEL">
+                        <field name="articlesCustomFont" default="Tahoma" size="35" label="TPL_DJ-REAL-ESTATE02_FONT_NAME_LABEL" description="TPL_DJ-REAL-ESTATE02_CUSTOM_FONT_NAME_DESC" />
+                    </group>
+                    <group value="2" label="TPL_DJ-REAL-ESTATE02_GOOGLEWEBFONT_LABEL">
+                        <field name="articlesGooglewebfontChooser"  size="55" label="TPL_DJ-REAL-ESTATE02_GOOGLE_FONT_URL_LABEL" description="TPL_DJ-REAL-ESTATE02_GOOGLE_FONT_URL_DESC" />
+                        <field name="articlesGooglewebfontFamily"  size="55" label="TPL_DJ-REAL-ESTATE02_GOOGLE_FONT_FAMILY_LABEL" description="TPL_DJ-REAL-ESTATE02_GOOGLE_FONT_FAMILY_DESC" />
+                    </group>
+                </field>
+                <field name="spacer_font_5" type="spacer" class="jmtext" label="TPL_DJ-REAL-ESTATE02_ADVANCED_FONT_SETTINGS_SPACER" />
+                <field name="advancedFontSizeSelector" type="list" default="24" label="TPL_DJ-REAL-ESTATE02_FONT_SIZE_SELECTOR_LABEL" description="TPL_DJ-REAL-ESTATE02_FONT_SIZE_SELECTOR_DESC">
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                </field>
+                <field name="advancedFontChooser" type="optiongroups" default="0" class="jmradio" label="TPL_DJ-REAL-ESTATE02_BODY_FONT_LABEL" description="TPL_DJ-REAL-ESTATE02_BODY_FONT_DESC">
+                    <group value="0" label="TPL_DJ-REAL-ESTATE02_STANDARD_FONT_LABEL">
+                        <field name="advancedFontFaceChooser" type="list" default="Arial, Helvetica, sans-serif" label="TPL_DJ-REAL-ESTATE02_FONT_NAME_LABEL" description="TPL_DJ-REAL-ESTATE02_FONT_NAME_DESC">
+                            <option value="Arial, Helvetica, sans-serif">TPL_DJ-REAL-ESTATE02_ARIAL_LABEL</option>
+                            <option value="Tahoma">TPL_DJ-REAL-ESTATE02_TAHOMA_LABEL</option>
+                            <option value="Verdana, Geneva, Arial, Helvetica, sans-serif">TPL_DJ-REAL-ESTATE02_VERDANA_LABEL</option>
+                            <option value="Times New Roman, Times, serif;">TPL_DJ-REAL-ESTATE02_TIMESNEWROMAN_LABEL</option>
+                        </field>
+                    </group>
+                    <group value="1" label="TPL_DJ-REAL-ESTATE02_CUSTOM_FONT_LABEL">
+                        <field name="advancedCustomFont" default="Tahoma" size="35" label="TPL_DJ-REAL-ESTATE02_FONT_NAME_LABEL" description="TPL_DJ-REAL-ESTATE02_CUSTOM_FONT_NAME_DESC" />
+                    </group>
+                    <group value="2" label="TPL_DJ-REAL-ESTATE02_GOOGLEWEBFONT_LABEL">
+                        <field name="advancedGooglewebfontChooser"  size="55" label="TPL_DJ-REAL-ESTATE02_GOOGLE_FONT_URL_LABEL" description="TPL_DJ-REAL-ESTATE02_GOOGLE_FONT_URL_DESC" />
+                        <field name="advancedGooglewebfontFamily"  size="55" label="TPL_DJ-REAL-ESTATE02_GOOGLE_FONT_FAMILY_LABEL" description="TPL_DJ-REAL-ESTATE02_GOOGLE_FONT_FAMILY_DESC" />
+                    </group>
+                </field>
+            	<field name="advancedSelectors" type="textarea" rows="5" cols="40" label="TPL_DJ-REAL-ESTATE02_ADVANCED_SELECTORS_LABEL" description="TPL_DJ-REAL-ESTATE02_ADVANCED_SELECTORS_DESC" />
+			</fieldset>
+			<!-- ADVANCED FEATURES -->
+			<fieldset name="advanced" label="TPL_DJ-REAL-ESTATE02_ADVANCED_FEATURES_LABEL">
+				<field name="GoogleAnalytics" type="optiongroups" default="1" label="TPL_DJ-REAL-ESTATE02_GOOGLE_ANALYTICS_LABEL" description="TPL_DJ-REAL-ESTATE02_GOOGLE_ANALYTICS_DESC">
+					<group value="0" label="TPL_DJ-REAL-ESTATE02_ENABLE_LABEL">
+						<field name="GoogleAnalyticsCode" type="text" size="55" label="TPL_DJ-REAL-ESTATE02_GOOGLE_ANALYTICS_CODE_LABEL" description="TPL_DJ-REAL-ESTATE02_GOOGLE_ANALYTICS_CODE_DESC" />
+					</group>
+					<group value="1" label="TPL_DJ-REAL-ESTATE02_DISABLE_LABEL"></group>
+				</field>
+				<field name="GoogleWebmaster" type="optiongroups" default="1" label="TPL_DJ-REAL-ESTATE02_GOOGLE_WEBMASTER_LABEL" description="TPL_DJ-REAL-ESTATE02_GOOGLE_WEBMASTER_DESC">
+					<group value="0" label="TPL_DJ-REAL-ESTATE02_ENABLE_LABEL">
+						<field name="GoogleWebmasterMeta" type="text" size="55" label="TPL_DJ-REAL-ESTATE02_GOOGLE_WEBMASTER_META_LABEL" description="TPL_DJ-REAL-ESTATE02_GOOGLE_WEBMASTER_META_DESC" />
+					</group>
+					<group value="1" label="TPL_DJ-REAL-ESTATE02_DISABLE_LABEL"></group>
+				</field>
+				<field name="CssCompress" type="list" default="1" label="TPL_DJ-REAL-ESTATE02_CSS_COMPRESS_LABEL" description="TPL_DJ-REAL-ESTATE02_CSS_COMPRESS_DESC">
+					<option value="0">TPL_DJ-REAL-ESTATE02_ENABLE_LABEL</option>
+					<option value="1">TPL_DJ-REAL-ESTATE02_DISABLE_LABEL</option>
+				</field>
+			</fieldset>
+			<!-- DOCUMENTATION -->
+			<fieldset name="documentation" label="TPL_DJ-REAL-ESTATE02_DOCUMENTATION_LABEL">
+				<field type="spacer" class="jmlink" label="TPL_DJ-REAL-ESTATE02_GENERAL_INFO_LABEL" />
+				<field type="spacer" class="jmlink" label="TPL_DJ-REAL-ESTATE02_TEMPLATE_DOCUMENTATION_LABEL" />
+				<field type="spacer" class="jmlink" label="TPL_DJ-REAL-ESTATE02_DOCS_EXTENSIONS_LABEL" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

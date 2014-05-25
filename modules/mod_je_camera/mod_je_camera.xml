@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="module" client="site">
+	<name>JE Camera Slideshow</name> 
+	<author>jExtensions.com</author> 
+	<creationDate>2012 October</creationDate> 
+	<copyright>jExtensions.com</copyright> 
+	<license>This extension in released under the GNU/GPL License - http://www.gnu.org/copyleft/gpl.html</license> 
+	<authorEmail>support@jExtensions.com</authorEmail> 
+	<authorUrl>http://jExtensions.com</authorUrl> 
+	<version>2.5.1</version> 
+	<description>
+	<![CDATA[
+	<h1>JE - Camera jQuery Slideshow</h1>
+	<div style="margin:0 0 0 10px; font-size:15px;">Download more free extensions at <a href="http://jextensions.com" target="_blank">jExtensions.com</a>;
+	<br/><br/>Get support for this Joomla module on the official <a href="http://jextensions.com/camera-jquery-slideshow-joomla/" target="_blank">Camera jQuery Slideshow</a> page.</div><br/>
+	<div style="margin:0 0 0 10px; font-size:11px;">Credits: <a href="http://www.pixedelic.com/plugins/camera/" target="_blank" >Camera</a></div>
+	<br/>
+		]]>
+	</description>
+	
+	<files>
+		<filename module="mod_je_camera">mod_je_camera.php</filename>
+		<filename>index.html</filename>
+		<filename>thumb.php</filename>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>php</folder>
+	</files>
+
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_je_camera/php">
+		<fieldset name="basic">
+			<field name="jQuery" type="list" default="2" label="jQuery Library" description="Enable or disable jQuery plugin on this module.">
+				<option value="1">jQuery 1.7.1 (Load localy)</option>
+				<option value="2">jQuery 1.8.3 (Load from Google)</option>
+				<option value="3">Disable jQuery Library</option>
+			</field>
+					
+			<!-- SLIDESHOW SETUP -->
+			<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slideshow Setup&lt;/div&gt;" />
+			<field name="imgHeight" type="text" default="400" label="Slideshow Height (pixles)" description="Height of slideshow in pixels." />
+			<field name="alignment" type="list" default="center" label="Image Alignment" description="Choose the images alignment in the slideshow.">
+				<option value="center">Center</option>
+				<option value="topLeft">topLeft</option>
+				<option value="topCenter">topCenter</option>
+				<option value="topRight">topRight</option>
+				<option value="centerLeft">centerLeft</option>
+				<option value="centerRight">centerRight</option>
+				<option value="bottomLeft">bottomLeft</option>
+				<option value="bottomCenter">bottomCenter</option>
+				<option value="bottomRight">bottomRight</option>
+			</field>			
+			<field name="autoPlay" type="list" default="true" label="Auto Play" description="Edable or disable the autoplya function.">
+				<option value="true">Enable</option>
+				<option value="false">Disable</option>
+			</field>		
+			<field name="cameraSkin" type="list" default="black" label="Skin Color" description="Color of arrows and pause button.">
+				<option value="amber">Amber</option>
+				<option value="ash">Ash</option>
+				<option value="azure">Azure</option>
+				<option value="beige">Beige</option>
+				<option value="black">Black</option>
+				<option value="blue">Blue</option>
+				<option value="brown">Brown</option>
+				<option value="burgundy">Burgundy</option>
+				<option value="charcoal">Charcoal</option>
+				<option value="chocolate">Chocolate</option>
+				<option value="coffee">Coffee</option>
+				<option value="cyan">Cyan</option>
+				<option value="fuchsia">Fuchsia</option>
+				<option value="gold">Gold</option>
+				<option value="green">Green</option>
+				<option value="grey">Grey</option>
+				<option value="indigo">Indigo</option>
+				<option value="khaki">Khaki</option>
+				<option value="lime">Lime</option>
+				<option value="magenta">Magenta</option>
+				<option value="maroon">Maroon</option>
+				<option value="orange">Orange</option>
+				<option value="olive">Olive</option>
+				<option value="pink">Pink</option>
+				<option value="pistachio">Pistachio</option>
+				<option value="red">Red</option>
+				<option value="tangerine">Tangerine</option>
+				<option value="turquoise">Turquoise</option>
+				<option value="violet">Violet</option>
+				<option value="white">White</option>
+				<option value="yellow">Yellow</option>
+			</field>
+			<field name="fx" type="list" default="random" label="Transaction Effect" description="Choose the slider transaction effect.">
+				<option value="random">random</option>
+				<option value="simpleFade">simpleFade</option> 
+				<option value="curtainTopLeft">curtainTopLeft</option> 
+				<option value="curtainTopRight">curtainTopRight</option> 
+				<option value="curtainBottomLeft">curtainBottomLeft</option> 
+				<option value="curtainBottomRight">curtainBottomRight</option> 
+				<option value="curtainSliceLeft">curtainSliceLeft</option> 
+				<option value="curtainSliceRight">curtainSliceRight</option> 
+				<option value="blindCurtainTopLeft">blindCurtainTopLeft</option> 
+				<option value="blindCurtainTopRight">blindCurtainTopRight</option> 
+				<option value="blindCurtainBottomLeft">blindCurtainBottomLeft</option> 
+				<option value="blindCurtainBottomRight">blindCurtainBottomRight</option> 
+				<option value="blindCurtainSliceBottom">blindCurtainSliceBottom</option> 
+				<option value="blindCurtainSliceTop">blindCurtainSliceTop</option> 
+				<option value="stampede">stampede</option> 
+				<option value="mosaic">mosaic</option> 
+				<option value="mosaicReverse">mosaicReverse</option> 
+				<option value="mosaicRandom">mosaicRandom</option> 
+				<option value="mosaicSpiral">mosaicSpiral</option> 
+				<option value="mosaicSpiralReverse">mosaicSpiralReverse</option> 
+				<option value="topLeftBottomRight">topLeftBottomRight</option> 
+				<option value="bottomRightTopLeft">bottomRightTopLeft</option> 
+				<option value="bottomLeftTopRight">bottomLeftTopRight</option> 
+				<option value="bottomLeftTopRight">bottomLeftTopRight</option>
+			</field>
+
+			<field name="slideOn" type="list" default="true" label="Effect Apply" description="Decide if the transition effect will be applied to the current (prev) or the next slide.">
+				<option value="random">Random</option>
+				<option value="next">Next</option>
+				<option value="prev">Current</option>
+			</field>
+			<field name="cols" type="text" default="6" label="Number of Columns" description="" />
+			<field name="rows" type="text" default="4" label="Number of Rows" description="" />
+			<field name="slicedCols" type="text" default="12" label="Sliced Columns" description="" />
+			<field name="slicedRows" type="text" default="8" label="Sliced Rows" description="" />	
+			<field name="easing" type="list" default="easeInOutExpo" label="Easing Effect" description="">
+				<option value="jswing">jswing</option>
+				<option value="def">def</option>
+				<option value="easeInQuad">easeInQuad</option>
+				<option value="easeOutQuad">easeOutQuad</option>
+				<option value="easeInOutQuad">easeInOutQuad</option>
+				<option value="easeInCubic">easeInCubic</option>
+				<option value="easeOutCubic">easeOutCubic</option>
+				<option value="easeInOutCubic">easeInOutCubic</option>
+				<option value="easeInQuart">easeInQuart</option>
+				<option value="easeOutQuart">easeOutQuart</option>
+				<option value="easeInOutQuart">easeInOutQuart</option>
+				<option value="easeInQuint">easeInQuint</option>
+				<option value="easeOutQuint">easeOutQuint</option>
+				<option value="easeInOutQuint">easeInOutQuint</option>
+				<option value="easeInSine">easeInSine</option>
+				<option value="easeOutSine">easeOutSine</option>
+				<option value="easeInOutSine">easeInOutSine</option>
+				<option value="easeInExpo">easeInExpo</option>
+				<option value="easeOutExpo">easeOutExpo</option>
+				<option value="easeInOutExpo">easeInOutExpo</option>
+				<option value="easeInCirc">easeInCirc</option>
+				<option value="easeOutCirc">easeOutCirc</option>
+				<option value="easeInOutCirc">easeInOutCirc</option>
+				<option value="easeInElastic">easeInElastic</option>
+				<option value="easeOutElastic">easeOutElastic</option>
+				<option value="easeInOutElastic">easeInOutElastic</option>
+				<option value="easeInBack">easeInBack</option>
+				<option value="easeOutBack">easeOutBack</option>
+				<option value="easeInOutBack">easeInOutBack</option>
+				<option value="easeInBounce">easeInBounce</option>
+				<option value="easeOutBounce">easeOutBounce</option>
+				<option value="easeInOutBounce">easeInOutBounce</option>
+			</field>
+			<field name="time" type="text" default="7000" label="Sliding Time (ms)" description="Milliseconds between the end of the sliding effect and the start of the next one." />
+			<field name="transPeriod" type="text" default="1500" label="Sliding Effect Time (ms)" description="Lenght of the sliding effect in milliseconds." />
+			
+			<!-- NAVIGATION -->
+			<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Navigation&lt;/div&gt;" />
+			<field name="pagination" type="list" default="true" label="Pagination" description="Display pagination bullets or thumbnails.">
+				<option value="true">Bullets</option>
+				<option value="false">Thumbnails</option>
+			</field>			
+			<field name="navigation" type="list" default="true" label="Navigation Buttons" description="Display or not the navigation buttons.">
+				<option value="true">Enable</option>
+				<option value="false">Disable</option>
+			</field>
+			<field name="navigationHover" type="list" default="true" label="Show Navigation Buttons" description="If navigation buttons Enabled, choose when to show them.">
+				<option value="true">Mouse Over</option>
+				<option value="false">Always</option>
+			</field>
+			<field name="playPause" type="list" default="true" label="Play / Pause Button" description="Display or not the Play / Pause button.">
+				<option value="true">Enable</option>
+				<option value="false">Disable</option>
+			</field>
+			<field name="pauseOnClick" type="list" default="true" label="Pause on Click" description="Pause slideshow on click.">
+				<option value="true">Yes</option>
+				<option value="false">No</option>
+			</field>
+			<field name="hover" type="list" default="true" label="Pause on Hover" description="Pause slider on mouse hover.">
+				<option value="true">Yes</option>
+				<option value="false">No</option>
+			</field>
+			<field name="loader" type="list" default="pie" label="Timer Type" description="">
+				<option value="pie">Pie</option>
+				<option value="bar">Bar</option>
+				<option value="none">None</option>
+			</field>
+			<field name="loaderColor" type="jscolor" default="#eeeeee" label="Timer Color" description="" />
+			<field name="loaderBgColor" type="jscolor" default="#222222" label="Timer BgColor" description="" />
+			<field name="pieDiameter" type="text" default="38" label="Pie Diameter (pixels)" description="" />
+			<field name="piePosition" type="list" default="rightTop" label="Pie Position" description="">
+				<option value="rightTop">Right Top</option>
+				<option value="leftTop">Left Top</option>
+				<option value="leftBottom">Left Bottom</option>
+				<option value="rightBottom">Right Bottom</option>
+			</field>
+			<field name="barPosition" type="list" default="bottom" label="Timer Bar Position" description="">
+				<option value="bottom">Bottom</option>
+				<option value="left">Left</option>
+				<option value="top">Top</option>
+				<option value="right">Right</option>
+			</field>
+			<field name="barDirection" type="list" default="leftToRight" label="Timer Bar Direction" description="">
+				<option value="leftToRight">Left to Right</option>
+				<option value="rightToLeft">Right to Left</option>
+				<option value="topToBottom">Top to Bottom</option>
+				<option value="bottomToTop">Bottom to Top</option>
+			</field>
+			<!-- THUMBS -->
+			<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Thumbs&lt;/div&gt;" />
+			<field name="thumbnails" type="list" default="true" label="Thumbnails" description="">
+				<option value="true">Enable</option>
+				<option value="false">Disable</option>
+			</field>
+			<field name="thumbWidth" type="text" default="100" label="Thumb Width (pixles)" description="Width of images are in pixels." />
+			<field name="thumbHeight" type="text" default="100" label="Thumb Height (pixles)" description="Height of images are in pixels." />
+			<field name="thumbQuality" type="list" default="100" label="Thumb Quality" description="Quality of the croped thumbnail image.">
+				<option value="100">100%</option>
+				<option value="90">90%</option>
+				<option value="80">80%</option>
+				<option value="70">70%</option>
+				<option value="60">60%</option>
+				<option value="50">50%</option>
+				<option value="40">40%</option>
+				<option value="30">30%</option>
+				<option value="20">20%</option>
+				<option value="10">10%</option>
+			</field>	
+			<field name="thumbAlign" type="list" default="t" label="Thumb Alignment" description="Choose the cropped image alignment.">
+				<option value="t">Top</option>
+				<option value="b">Bottom</option>
+				<option value="l">Left</option>
+				<option value="r">Right</option>
+			</field>
+			<field type="asset" />
+		</fieldset>	
+		<fieldset name="slides" label="Slides">		
+		<!-- SLIDE 1 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide 1&lt;/div&gt;" />
+		<field name="Image1" label="Image 1" type="media"  description="Choose an image." />
+		<field name="Video1" label="Video 1" type="text"  description="Embade a Youtube or Vimeo video." />
+		<field name="Link1" label="Link 1" type="text"  description="URL where the slider image will link." />
+		<field name="Caption1" label="Caption 1" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+		<!-- SLIDE 2 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide 2&lt;/div&gt;" />
+		<field name="Image2" label="Image 2" type="media"  description="Choose an image." />
+		<field name="Video2" label="Video 2" type="text"  description="Embade a Youtube or Vimeo video." />
+		<field name="Link2" label="Link 2" type="text"  description="URL where the slider image will link." />
+		<field name="Caption2" label="Caption 2" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+		<!-- SLIDE 3 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide 3&lt;/div&gt;" />
+		<field name="Image3" label="Image 3" type="media"  description="Choose an image." />
+		<field name="Video3" label="Video 3" type="text"  description="Embade a Youtube or Vimeo video." />
+		<field name="Link3" label="Link 3" type="text"  description="URL where the slider image will link." />
+		<field name="Caption3" label="Caption 3" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />		
+		<!-- SLIDE 4 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide 4&lt;/div&gt;" />
+		<field name="Image4" label="Image 4" type="media"  description="Choose an image." />
+		<field name="Video4" label="Video 4" type="text"  description="Embade a Youtube or Vimeo video." />
+		<field name="Link4" label="Link 4" type="text"  description="URL where the slider image will link." />
+		<field name="Caption4" label="Caption 4" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+		<!-- SLIDE 5 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide 5&lt;/div&gt;" />
+		<field name="Image5" label="Image 5" type="media"  description="Choose an image." />
+		<field name="Video5" label="Video 5" type="text"  description="Embade a Youtube or Vimeo video." />
+		<field name="Link5" label="Link 5" type="text"  description="URL where the slider image will link." />
+        <field name="Caption5" label="Caption 5" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+		<!-- SLIDE 6 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide 6&lt;/div&gt;" />
+		<field name="Image6" label="Image 6" type="media"  description="Choose an image." />
+		<field name="Video6" label="Video 6" type="text"  description="Embade a Youtube or Vimeo video." />
+		<field name="Link6" label="Link 6" type="text"  description="URL where the slider image will link." />
+        <field name="Caption6" label="Caption 6" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+		<!-- SLIDE 7 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide 7&lt;/div&gt;" />
+		<field name="Image7" label="Image 7" type="media"  description="Choose an image." />
+		<field name="Video7" label="Video 7" type="text"  description="Embade a Youtube or Vimeo video." />
+		<field name="Link7" label="Link 7" type="text"  description="URL where the slider image will link." />
+        <field name="Caption7" label="Caption 7" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+		<!-- SLIDE 8 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide 8&lt;/div&gt;" />
+		<field name="Image8" label="Image 8" type="media"  description="Choose an image." />
+		<field name="Video8" label="Video 8" type="text"  description="Embade a Youtube or Vimeo video." />
+		<field name="Link8" label="Link 8" type="text"  description="URL where the slider image will link." />
+        <field name="Caption8" label="Caption 8" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+		<!-- SLIDE 9 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide 9&lt;/div&gt;" />
+		<field name="Image9" label="Image 9" type="media"  description="Choose an image." />
+		<field name="Video9" label="Video 9" type="text"  description="Embade a Youtube or Vimeo video." />
+		<field name="Link9" label="Link 9" type="text"  description="URL where the slider image will link." />
+        <field name="Caption9" label="Caption 9" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+		<!-- SLIDE 10 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide 10&lt;/div&gt;" />
+		<field name="Image10" label="Image 10" type="media"  description="Choose an image." />
+		<field name="Video10" label="Video 10" type="text"  description="Embade a Youtube or Vimeo video." />
+		<field name="Link10" label="Link 10" type="text"  description="URL where the slider image will link." />
+        <field name="Caption10" label="Caption 10" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+		<!-- SLIDE 11 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide 11&lt;/div&gt;" />
+		<field name="Image11" label="Image 11" type="media"  description="Choose an image." />
+		<field name="Video11" label="Video 11" type="text"  description="Embade a Youtube or Vimeo video." />
+		<field name="Link11" label="Link 11" type="text"  description="URL where the slider image will link." />
+        <field name="Caption11" label="Caption 11" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+		<!-- SLIDE 12 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide 12&lt;/div&gt;" />
+		<field name="Image12" label="Image 12" type="media"  description="Choose an image." />
+		<field name="Video12" label="Video 12" type="text"  description="Embade a Youtube or Vimeo video." />
+		<field name="Link12" label="Link 12" type="text"  description="URL where the slider image will link." />
+        <field name="Caption12" label="Caption 12" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+		<!-- SLIDE 13 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide 13&lt;/div&gt;" />
+		<field name="Image13" label="Image 13" type="media"  description="Choose an image." />
+		<field name="Video13" label="Video 13" type="text"  description="Embade a Youtube or Vimeo video." />
+		<field name="Link13" label="Link 13" type="text"  description="URL where the slider image will link." />
+        <field name="Caption13" label="Caption 13" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+		<!-- SLIDE 14 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide 14&lt;/div&gt;" />
+		<field name="Image14" label="Image 14" type="media"  description="Choose an image." />
+		<field name="Video14" label="Video 14" type="text"  description="Embade a Youtube or Vimeo video." />
+		<field name="Link14" label="Link 14" type="text"  description="URL where the slider image will link." />
+        <field name="Caption14" label="Caption 14" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+		<!-- SLIDE 15 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide 15&lt;/div&gt;" />
+		<field name="Image15" label="Image 15" type="media"  description="Choose an image." />
+		<field name="Video15" label="Video 15" type="text"  description="Embade a Youtube or Vimeo video." />
+		<field name="Link15" label="Link 15" type="text"  description="URL where the slider image will link." />
+        <field name="Caption15" label="Caption 15" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+		<!-- SLIDE 16 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide 16&lt;/div&gt;" />
+		<field name="Image16" label="Image 16" type="media"  description="Choose an image." />
+		<field name="Video16" label="Video 16" type="text"  description="Embade a Youtube or Vimeo video." />
+		<field name="Link16" label="Link 16" type="text"  description="URL where the slider image will link." />
+        <field name="Caption16" label="Caption 16" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+		<!-- SLIDE 17 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide 17&lt;/div&gt;" />
+		<field name="Image17" label="Image 17" type="media"  description="Choose an image." />
+		<field name="Video17" label="Video 17" type="text"  description="Embade a Youtube or Vimeo video." />
+		<field name="Link17" label="Link 17" type="text"  description="URL where the slider image will link." />
+        <field name="Caption17" label="Caption 17" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+		<!-- SLIDE 18 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide 18&lt;/div&gt;" />
+		<field name="Image18" label="Image 18" type="media"  description="Choose an image." />
+		<field name="Video18" label="Video 18" type="text"  description="Embade a Youtube or Vimeo video." />
+		<field name="Link18" label="Link 18" type="text"  description="URL where the slider image will link." />
+        <field name="Caption18" label="Caption 18" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+		<!-- SLIDE 19 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide 19&lt;/div&gt;" />
+		<field name="Image19" label="Image 19" type="media"  description="Choose an image." />
+		<field name="Video19" label="Video 19" type="text"  description="Embade a Youtube or Vimeo video." />
+		<field name="Link19" label="Link 19" type="text"  description="URL where the slider image will link." />
+        <field name="Caption19" label="Caption 19" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+		<!-- SLIDE 20 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide 20&lt;/div&gt;" />
+		<field name="Image20" label="Image 20" type="media"  description="Choose an image." />
+		<field name="Video20" label="Video 20" type="text"  description="Embade a Youtube or Vimeo video." />
+		<field name="Link20" label="Link 20" type="text"  description="URL where the slider image will link." />
+        <field name="Caption20" label="Caption 20" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add image caption here. HTML allowed." />
+		
+		</fieldset>	
+					
+	</fields>
+	</config>
+</extension>

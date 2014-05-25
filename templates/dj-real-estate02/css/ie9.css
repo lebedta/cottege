@@ -1,0 +1,19 @@
+/*--------------------------------------------------------------
+# Copyright (C) joomla-monster.com
+# License: http://www.joomla-monster.com/license.html Joomla-Monster Proprietary Use License
+# Website: http://www.joomla-monster.com
+# Support: info@joomla-monster.com
+---------------------------------------------------------------*/
+
+/*********************** IE9 ************************/
+
+/** menus **/
+
+.jm-module.white-ms ul.menu > li.active > a:link,
+.jm-module.white-ms ul.menu > li.active > a:visited,
+.jm-module.white-ms ul.menu > li > a:hover,
+.jm-module.border-ms ul.menu > li.active > a:link,
+.jm-module.border-ms ul.menu > li.active > a:visited,
+.jm-module.border-ms ul.menu > li > a:hover{
+    padding-left: 30px;
+}

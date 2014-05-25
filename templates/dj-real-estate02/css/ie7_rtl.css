@@ -1,0 +1,175 @@
+/*--------------------------------------------------------------
+# Copyright (C) joomla-monster.com
+# License: http://www.joomla-monster.com/license.html Joomla-Monster Proprietary Use License
+# Website: http://www.joomla-monster.com
+# Support: info@joomla-monster.com
+---------------------------------------------------------------*/
+
+/*********************** IE7 RTL ONLY ************************/
+
+/** details **/
+	
+#jm-back-top {
+    margin: 0;
+    left: 50px;
+    padding: 0;
+    zoom: 1;
+}
+
+/** djmenu **/
+
+.dj-main {
+    direction: ltr;
+    text-align: left;
+    float: left;
+    width: 99.9%
+}
+
+.dj-main li.dj-up {
+    float: right;
+    margin: 0;
+    display: inline;
+}
+
+.dj-main li a.dj-up_a {
+    display: inline;
+    float: none;
+    float: left;
+}
+
+.dj-main li:hover ul.dj-submenu,
+.dj-main li.hover ul.dj-submenu {
+    left: auto;
+    right: 0;
+}
+
+.dj-main li:hover ul.dj-submenu li,
+.dj-main li.hover ul.dj-submenu li {
+    float: right;
+}
+
+.dj-main li:hover ul,
+.dj-main li:hover li:hover ul,
+.dj-main li:hover li:hover li:hover ul,
+.dj-main li:hover li:hover li:hover li:hover ul,
+.dj-main li:hover li:hover li:hover li:hover li:hover ul,
+.dj-main li.hover ul,
+.dj-main li.hover li.hover ul,
+.dj-main li.hover li.hover li.hover ul,
+.dj-main li.hover li.hover li.hover li.hover ul,
+.dj-main li.hover li.hover li.hover li.hover li.hover ul {
+    left: auto;
+    right: 242px;
+}
+
+.dj-main ul,
+.dj-main li:hover ul ul,
+.dj-main li:hover li:hover ul ul,
+.dj-main li:hover li:hover li:hover ul ul,
+.dj-main li:hover li:hover li:hover li:hover ul ul,
+.dj-main ul,
+.dj-main li.hover ul ul,
+.dj-main li.hover li.hover ul ul,
+.dj-main li.hover li.hover li.hover ul ul,
+.dj-main li.hover li.hover li.hover li.hover ul ul {
+    left: 0;
+    right: auto;
+}
+
+#jm-top-bar {
+    zoom: 1;
+}
+#jm-top-bar ul.menu li {
+    display: inline;
+    float: none;
+}
+
+#jm-top-bar ul.menu li a:link,
+#jm-top-bar ul.menu li a:visited{
+    display: inline-block;
+    float: none;
+}
+
+/** modules **/
+
+.jm-module .jm-title-wrap {
+    zoom: 1;
+}
+/** layout **/
+
+#jm-allpage {
+    zoom: 1;
+}
+
+/** dj-imageslider **/
+
+.djslider-loader {
+    zoom: 1;
+}
+
+/** dj-classifieds **/
+
+#dj-classifieds .dj-additem .title_top,
+#dj-classifieds .dj-cattree-box .title_top,
+#dj-classifieds .dj-item .title_top,
+#dj-classifieds .dj-category .cat_row_title,
+#dj-classifieds table.paymentdetails td.td_title h2,
+#dj-classifieds .title_top h1 {
+    zoom: 1;
+}
+
+#dj-classifieds .sb_bottom {
+    zoom: 1;
+}
+
+#dj-classifieds .djc_thumbnails {
+    zoom: 1;
+}
+
+#dj-classifieds .dj-item .djc_mainimage {
+    margin-right: 0;
+}
+
+#dj-classifieds .dj-item .djc_thumbnails .djc_thumbnail {
+    float: none;
+}
+
+#dj-classifieds .defaultSimpleSkin {
+    zoom: 1;
+}
+ 
+#dj-classifieds table.dj-items tr td {
+    border-right: 1px solid ;
+}
+
+#dj-classifieds table.dj-items tr td.first,
+#dj-classifieds table.dj-items tr.promotion.p_bg td.first {
+    border-left: 1px solid;
+}
+
+#dj-classifieds table.dj-items tr.promotion.p_bg td {
+    border-left: 1px solid;
+}
+
+#dj-classifieds table.dj-items tr.promotion.p_border td,
+#dj-classifieds table.dj-items tr.promotion.p_border td.first {
+    border: 3px solid;
+}
+
+#dj-classifieds table.dj-items tr.promotion.p_border td.last {
+    border-right: 3px solid;
+}
+
+/** djcatalog2 **/
+
+.djf_mod .djf_left {
+    float: none;
+}
+
+.djf_mod .djf_pag {
+    margin-top: 10px;
+}
+
+.djf_mod .djf_img {
+    float: right;
+}

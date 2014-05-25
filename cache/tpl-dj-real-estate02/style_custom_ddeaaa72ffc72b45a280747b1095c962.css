@@ -1,0 +1,102 @@
+
+body {
+	font-family: Arial, Helvetica, sans-serif;	font-size: 12px;
+}
+
+.dj-main li a.dj-up_a {
+	font-family: 'Open Sans', sans-serif;	font-size: 16px;
+}
+
+#jm-top-bar-in,
+#jm-header-in,
+#jm-midpage-in,
+#jm-bottompage-in,
+#jm-footer-in{
+	max-width: 980px;
+}
+
+#jm-left {
+	width: 25%;
+}
+
+#jm-content-right {
+	width: 75%;
+}
+
+#jm-content {
+	width: 67%;
+}
+
+#jm-right {
+	width: 33%;
+}
+
+.jm-module .jm-title-wrap h3,
+.djslider .slide-desc-text .slide-title,
+#dj-classifieds .dj-category .title h2,
+#dj-classifieds .dj-category .cat_row_title,
+#dj-classifieds .djcf_items_blog .title h2,
+#dj-classifieds .dj-additem .title_top,
+#dj-classifieds .dj-cattree-box .title_top,
+#dj-classifieds .dj-item .title_top h2,
+#dj-classifieds .title_top h1,
+#dj-classifieds table.paymentdetails td.td_title,
+.djf_mod .djf_text h3,
+.djslider .slide-desc-text .slide-title,
+#djcatalog .djc_subcategories h2.djc_title,
+#djcatalog h3.djc_related_title,
+#djcatalog .djc_title h3,
+#djcatalog h2.djc_title,
+.djf_mod .djf_text h3,
+.djcf .tip-title,
+.view h2,
+h1#jm-logo,
+input.button, button.validate, button,
+p.readmore a:link, p.readmore a:visited,
+a.readmore:link, a.readmore:visited,
+.djslider .slide-desc-text .slide-title,
+.classifieds_buttons a.button:link,
+.classifieds_buttons a.button:visited,
+.see_details_box a.see_details:link, .see_details_box a.see_details:visited,
+#dj-classifieds .djcf_items_blog .see_details_box a.see_details:link,
+#dj-classifieds .djcf_items_blog .see_details_box a.see_details:visited,
+.djcf_menu .newad_link_bottom a:link,
+.djcf_menu .newad_link_bottom a:visited,
+.dj_cf_search a.button:link,
+.dj_cf_search a.button:visited,
+a.readon:link,
+a.readon:visited,
+.classifieds_buttons a.button:link,
+.classifieds_buttons a.button:visited {
+	font-family: 'Open Sans', sans-serif;}
+
+.jm-module .jm-title-wrap h3,
+#dj-classifieds .dj-category .cat_row_title,
+#dj-classifieds .djcf_items_blog .title h2,
+#dj-classifieds .dj-additem .title_top,
+#dj-classifieds .dj-cattree-box .title_top,
+#dj-classifieds .dj-item .title_top h2,
+#dj-classifieds .title_top h1,
+#dj-classifieds table.paymentdetails td.td_title,
+.djf_mod .djf_text h3,
+#djcatalog .djc_subcategories h2.djc_title,
+#djcatalog .djc_category h2.djc_title,
+.djslider .slide-desc-text .slide-title,
+#djcatalog h3.djc_related_title,
+.view h2 {
+	font-size: 18px;
+}
+
+div.blog h2,
+div.item-page h2,
+div.blog-featured h2,
+div.items-more h3,
+div.item-page h2,
+ul#archive-items li.row0 h2,
+div.contact h2,
+div.contact-category h2,
+div.newsfeed-category h2,
+#dj-classifieds h1.main_cat_title {
+	font-family: 'Open Sans', sans-serif;	font-size: 18px;
+}
+

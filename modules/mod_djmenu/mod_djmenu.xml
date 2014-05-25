@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+	<name>DJ-Menu</name>
+	<creationDate>January 2011</creationDate>	
+	<author>Blue Constant Media LTD</author>
+	<copyright>Copyright (C) 2010 Blue Constant Media LTD, All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses GNU/GPL</license>
+	<authorEmail>contact@design-joomla.eu</authorEmail>
+	<authorUrl>http://design-joomla.eu</authorUrl>
+	<version>1.6.4.stable</version>
+	<description>MOD_DJMENU_MODULE_DESC</description>
+	<files>
+		<filename module="mod_djmenu">mod_djmenu.php</filename>
+		<filename>mod_djmenu.xml</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+		<folder>language</folder>
+	</files>
+	<config>
+		<fields name="params">
+		
+			<fieldset name="basic">
+				<field name="menu" type="menu" default="mainmenu" label="MOD_DJMENU_MENU_NAME" description="MOD_DJMENU_MENU_NAME_DESC" />
+				<field name="endLevel" type="list" default="0" label="MOD_DJMENU_END_LEVEL" description="MOD_DJMENU_END_LEVEL_DESC">
+					<option value="0">JALL</option>
+					<option value="1">J1</option>
+					<option value="2">J2</option>
+					<option value="3">J3</option>
+					<option value="4">J4</option>
+					<option value="5">J5</option>
+					<option value="6">J6</option>
+					<option value="7">J7</option>
+					<option value="8">J8</option>
+					<option value="9">J9</option>
+					<option value="10">J10</option>					
+				</field>
+				<field name="css" type="radio" default="1" label="MOD_DJMENU_CSS" description="MOD_DJMENU_CSS_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="moo" type="radio" default="1" label="MOD_DJMENU_MOO" description="MOD_DJMENU_MOO_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="wrapper" type="text" default="" label="MOD_DJMENU_WRAPPER" description="MOD_DJMENU_WRAPPER_DESC" />
+				<field name="select" type="radio" default="0" label="MOD_DJMENU_DISPLAY_SELECT" description="MOD_DJMENU_DISPLAY_SELECT_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+			</fieldset>
+			<fieldset name="advanced">
+				<field type="spacer" label="MOD_DJMENU_EFFECTS_PARAMS" />
+				<field name="height_fx" type="radio" default="1" label="MOD_DJMENU_VERTICAL" description="MOD_DJMENU_VERTICAL_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="width_fx" type="radio" default="1" label="MOD_DJMENU_HORIZONTAL" description="MOD_DJMENU_HORIZONTAL_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="opacity_fx" type="radio" default="1" label="MOD_DJMENU_FADE" description="MOD_DJMENU_FADE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field type="spacer" label="&lt;hr &#47;&gt;" />
+				<field name="height_fx_sub" type="radio" default="1" label="MOD_DJMENU_VERTICAL_SUB" description="MOD_DJMENU_VERTICAL_SUB_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="width_fx_sub" type="radio" default="1" label="MOD_DJMENU_HORIZONTAL_SUB" description="MOD_DJMENU_HORIZONTAL_SUB_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="opacity_fx_sub" type="radio" default="1" label="MOD_DJMENU_FADE_SUB" description="MOD_DJMENU_FADE_SUB_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field type="spacer" label="&lt;hr &#47;&gt;" />
+				<field name="effect" type="list" default="cubic" label="MOD_DJMENU_TRANSITION" description="MOD_DJMENU_TRANSITION_DESC">
+					<option value="linear">Linear</option>
+					<option value="cubic">Cubicular</option>
+					<option value="expo">Exponential</option>
+					<option value="circ">Circular</option>
+					<option value="sine">Sineousidal</option>					
+					<option value="back">Back</option>
+					<option value="bounce">Bounce</option>
+					<option value="elastic">Elastic</option>
+				</field>
+				<field name="duration" type="text" default="" size="10" label="MOD_DJMENU_DURATION" description="MOD_DJMENU_DURATION_DESC" />
+				<field name="delay" type="text" default="" size="10" label="MOD_DJMENU_DELAY" description="MOD_DJMENU_DELAY_DESC" />
+				
+			</fieldset>
+			
+			<fieldset name="OTHER">
+				
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+					
+			</fieldset>
+		</fields>
+	</config>
+</extension>
